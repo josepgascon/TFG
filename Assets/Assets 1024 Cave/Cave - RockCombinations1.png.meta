@@ -1,0 +1,5750 @@
+fileFormatVersion: 2
+guid: 6fa20e8fe1144974c93345e22028a4cc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_0
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 2004
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd25dd8712ad36d4487d88c8dc0ba587
+      internalID: 278951556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1980
+        width: 71
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2090e66c5cf2cb7458d214e3ae0f7b6b
+      internalID: -1279382860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1980
+        width: 60
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0609de9f86ffab241bc3148cec625dc7
+      internalID: -2093410869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_3
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 1974
+        width: 59
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d2b12f1e9a6684b9edca5d70ed6cfe
+      internalID: -1862055853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_4
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1992
+        width: 134
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1d7bb36ea90e54aac52f0d746a3a2a
+      internalID: -1925297217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_5
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1944
+        width: 67
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0a856b4eeb48443a18f695d1eab3a1
+      internalID: -1262982938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_6
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1974
+        width: 58
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a54b0d64f005eb4094f2bc70810c5fc
+      internalID: -182532180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_7
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1890
+        width: 125
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441f0d3466ec5464d8702d2e1d5f11ef
+      internalID: -1117796758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_8
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1986
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da198abd56f9e44ab7b0173b02fa636
+      internalID: -1540821390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_9
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1980
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c934e1071a156547aaf59c987dc6048
+      internalID: 237239182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1635
+        width: 578
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a626a84aab84f8478a3e8122e027331
+      internalID: 720140213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_11
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1686
+        width: 312
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af3cdbf09ebf6148b9b386ab2bb23be
+      internalID: 652994830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_12
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1932
+        width: 57
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fc42c5563b3154da6fb003851c9658
+      internalID: 757722057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_13
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1926
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c4897ee2c9c4349bd63a1d8da1431b
+      internalID: -1444491193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_14
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1902
+        width: 69
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2d26588b3c0844bb4542da1385ed3c
+      internalID: 574058078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_15
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1596
+        width: 471
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3928b865f696434448111589c54e2ac4
+      internalID: 1619896144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_16
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 1717
+        width: 420
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a62511e2dbbff4aae4667232b67d0d
+      internalID: -400380937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_17
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1944
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e9858138ecde744ac5565df5af3425
+      internalID: -1564938703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1872
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e892a80abef95e543b1a93109e918d3b
+      internalID: -430317205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_19
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1824
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125b4f4511af91c4c9f13d24d257b6f0
+      internalID: 647552637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_20
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1812
+        width: 72
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67e716d216320c4389d193619f2f872
+      internalID: 1002074103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_21
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1878
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c954fe9f871f10b4bb0ff926c739cd9e
+      internalID: 1677147855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_22
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1860
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957f930d0d6eb574085eeaf466d0d803
+      internalID: -576735877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_23
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1872
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4012598686a6f904186395c05f2c1274
+      internalID: 714204220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_24
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1854
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f8fbe359256094e80a3c7667e0f0f3
+      internalID: -125114518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_25
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 1860
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db51d2d14c501240b9388e89b44fd50
+      internalID: 1173780840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_26
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1693
+        width: 66
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cd36aa0b31e384894502ea3041186a
+      internalID: -649151954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_27
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1765
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78fcd787815de44d9262585af94dba3
+      internalID: -2040147002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_28
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1722
+        width: 114
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d736500593d4b9344bee3cf70d374b7e
+      internalID: -1135681260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_29
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 1704
+        width: 102
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e372c6999e1eddd4a9843cc82ba817f6
+      internalID: -1945950473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1662
+        width: 72
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f697c5e7575704ca5892eb09a75323
+      internalID: 364091002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_31
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1729
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969c665bf6e5c5c428f5b54b6bb83796
+      internalID: 1064680838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_32
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1730
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f234808b12b6074daa33102d4291491
+      internalID: -943584945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_33
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 1615
+        width: 102
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b497568adf876544f924c1ffee72a079
+      internalID: -1179948545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_34
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1723
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceaa0859983ae064cb9c0c9e5a114dc1
+      internalID: -480738228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_35
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1681
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f71374603ea0344ae1fca394dcf63b
+      internalID: -1853043487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_36
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1698
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb44ae4dfc3311f4db76f886a47b207c
+      internalID: 403613603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_37
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1698
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7153c323cdc50684e9d8494e5a58233e
+      internalID: -1674187724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_38
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1680
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb01cf8bb813d64aa06550382bf6923
+      internalID: -2114549316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_39
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 1632
+        width: 70
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d45db08edc1b8447b07198ba349c6c1
+      internalID: 728899135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_40
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1572
+        width: 144
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ad92aec11c2304ab6a2f85517fe659
+      internalID: -1604620378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_41
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1669
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0beb39c6464aa37468e6d04d9efd4330
+      internalID: 1164341235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_42
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1674
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd33c1f58da04344e9116acf487a0641
+      internalID: 2118626649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_43
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1409
+        width: 324
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00fb74697882e1429e815afb22fdd28
+      internalID: 1408616182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_44
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1662
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b2a0eeea1d6a64da30c3083382991e
+      internalID: 1945576290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_45
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1660
+        width: 61
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c45009ceeeb944683ea9fc18b0c60d
+      internalID: 1131049550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_46
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1666
+        width: 73
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcaaa4a433ef8343abe7be629adb35d
+      internalID: 1719631565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_47
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1614
+        width: 94
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9eb82b800bfed4e9dffc6fc6039df3
+      internalID: 1543968165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_48
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1626
+        width: 40
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6882d73ab7a7515408e9da44ed2f49a1
+      internalID: -1323742173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_49
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 1591
+        width: 89
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ace76d97926c464f89e5d186dbe9482
+      internalID: -641168569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_50
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 1554
+        width: 48
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d03f23f4ecd094d8a67450998bb51f
+      internalID: -894799527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_51
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1620
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47e4473a244c8243aca3a3caa9933de
+      internalID: 2465897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_52
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1614
+        width: 40
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef29b8982c036e04fa951253d55975cb
+      internalID: 1803275490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_53
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 1560
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e486cab4ef2ad004ba466e1c972c5eb4
+      internalID: -143988194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_54
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1596
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc844b15bf86b2468b79600a9e96c9f
+      internalID: -1858162271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_55
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1608
+        width: 41
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b1e427f89454c42943d9dbecb56865
+      internalID: 617208703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_56
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1602
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ce81fc7aa1caa46b5a426c51541ace
+      internalID: -1140886825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_57
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1584
+        width: 59
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b49907ab1d6c2b48830856e02243899
+      internalID: -60559247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_58
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1566
+        width: 81
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a771bde2a90d8148beaa65f0cdfa7db
+      internalID: -1548388713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_59
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1193
+        width: 440
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a399b50688be9d249acd495c21d7277a
+      internalID: -1742911667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_60
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1560
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c5d32d8b4d8354fa5a2966c77269ea
+      internalID: 1970680001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_61
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1470
+        width: 119
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a445800756b98b740a57cacb378863f9
+      internalID: -278545556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_62
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1548
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d50409a3dfce048b6435e523e9adf7
+      internalID: -328745815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_63
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1572
+        width: 71
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3316d08c316850f40836eb53fc2c3fdb
+      internalID: -1382959893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_64
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1590
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49485daee753a844965ef138f3dbd27
+      internalID: 2014561348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_65
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1524
+        width: 78
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363957e8ec9c0ad46bac07c6c50cab25
+      internalID: 1099536251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_66
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1590
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82b53d887bd59c44b79bbc44b50af69
+      internalID: 2146316782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_67
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 1590
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cecd4216545283418f7ab8947377851
+      internalID: 622394193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_68
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1333
+        width: 438
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b842dbf042b8def4dbe9ee6aefa6b15a
+      internalID: -243447916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_69
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1332
+        width: 242
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0a1d55d62dcbf49995c375a6bb0689
+      internalID: 854227764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_70
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1542
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9097e92861c7e48b453d32e5335f33
+      internalID: -1048447599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_71
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 1380
+        width: 253
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e750ce2b2ca1c4cba475a596cc34ea
+      internalID: 2026820858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_72
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 1572
+        width: 83
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accd2f392cfe2914183c544bfdbb1034
+      internalID: 1249094482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_73
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1506
+        width: 55
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5ac54c0cf47924784960cadab1a22f
+      internalID: 703102063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_74
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 1506
+        width: 75
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b847b9fc214c2b41a49e3f22f8d3fe6
+      internalID: 1823615067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_75
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1548
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93265886d056fe146b78afcc26368ba2
+      internalID: 1782848388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_76
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1542
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8faea815c182c9c418d3a6196ed9ea34
+      internalID: -684821289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_77
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 1531
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f9100ff3ee2404c9ca5e3181569a46
+      internalID: -681362124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_78
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1494
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2108f5534c588145a74ecb371d59e8d
+      internalID: -768602900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_79
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1423
+        width: 14
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7226841b0ea264b931013597a275a6
+      internalID: -206174537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_80
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 1514
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d564057ba898f459da89680c41e59f
+      internalID: -1684823141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_81
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1507
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafea450a2ec87c47aba1fe2792c541b
+      internalID: 573382932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_82
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 1494
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e352aca2d19ac479367d641c1f3ddc
+      internalID: -2116634807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_83
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1398
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda7d77540673034aa2a06489267531a
+      internalID: -1528465901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_84
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1374
+        width: 66
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99f16ed84dba5347a57e35c2ecd86b1
+      internalID: -1432671179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_85
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1381
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c66be8b4382b848abb5d6c58e4b537
+      internalID: -391945079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_86
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1375
+        width: 108
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b48a23c403151a49998fc754cebe862
+      internalID: -1871608116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_87
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1417
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16e20d697435db40bc1d9eba913b592
+      internalID: 722628060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_88
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 1416
+        width: 56
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c417b5a9ff86e468119a107505683b
+      internalID: 1110261461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_89
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1409
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0709b4cc8a21f3441a8fb94631c57ea5
+      internalID: 1885864278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_90
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1411
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c06f677b9a87344ea29d75dcfae788f
+      internalID: -2001754727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_91
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1398
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4448160a2144df64d9ac09856d05c248
+      internalID: 1064876609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_92
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 1386
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee93fa4790bac824ea8b067f0db530df
+      internalID: -834733623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_93
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1399
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e34be10c598184c9138350adefb290
+      internalID: -1529912181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1362
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80cc42d6e2e9364985f4491b8f724c9
+      internalID: -451976334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_95
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1327
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1af4f27ebd98949b42204435a48890
+      internalID: 2001102301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_96
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1326
+        width: 65
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eba7be0b9af6e44e8b6967bdec34b3f
+      internalID: 1675014167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_97
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1374
+        width: 53
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52dadec6df8d1f54cac3ee28d0c2e97b
+      internalID: -1283409331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_98
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 1378
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61b33448157ccb41ae2c0ab934a4bf3
+      internalID: -68624485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_99
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1380
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc3e019defecaf418008303f2cd236e
+      internalID: -1316695142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_100
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 1315
+        width: 219
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b664797b4bf066643b394c09bf47f3df
+      internalID: 1934948423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_101
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1349
+        width: 57
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676b03f3da62b554ba809f3debc95766
+      internalID: 2087942610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_102
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 1367
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283c3dea36b0cae498cb2cd442e7dee7
+      internalID: -1145938536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_103
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1368
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963c5287fc5f48744a70dda9ee39d666
+      internalID: 1359529872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_104
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1363
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786e1d7428c415a4399ab4b9df5ada46
+      internalID: -482984477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_105
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1357
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765eb4437314b344d8bbff7d79ff8bb9
+      internalID: 701752906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_106
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1351
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291921401bc8dbd4885d6a4f055402f3
+      internalID: -472902661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_107
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1345
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c44a2498416e2843b02f2b84aca3273
+      internalID: -690369773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_108
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1320
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dcfdb227d24e246b1ac8c75f5faafe
+      internalID: 409436494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_109
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1339
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b6f8ddd90ddd941ac2254a862cfe3e
+      internalID: 524233486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_110
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1333
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf6ebd143730e440b638a0960a2c433
+      internalID: -979952024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_111
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1327
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2a96e40649d994cb242e9c7c425524
+      internalID: 1149407510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_112
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1320
+        width: 76
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a9f41fac262164f9c1c3c978e3f197
+      internalID: 2054671698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_113
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1321
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb370179781b694bb35403b7d7295fa
+      internalID: 139927154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_114
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 1309
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe725eb89a4775b4da86daae3f9138c0
+      internalID: 862145808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_115
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1321
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edb297e2f5d9fc42bef3a193a1e51ff
+      internalID: -1776740571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_116
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1302
+        width: 53
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0410e896ed98744298c3c7908974d2c
+      internalID: -693888998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_117
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1314
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dd04486d05e6b4ea30f1571758d85d
+      internalID: 401252931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_118
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1308
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c985b59acccb89409b6d7fbd0df24e0
+      internalID: -309012403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_119
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1236
+        width: 69
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2af4b289fd91440a4fe3ae9332c2a4
+      internalID: 1932179425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_120
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1308
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30777bac127ce8c408896ae04a0ce663
+      internalID: -1521951918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_121
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1308
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2402d36b6baf0ec4fbd06cb54b045c8f
+      internalID: -1043641517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_122
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1262
+        width: 8
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db505bd2ec5c69d4f8d498f81cc69323
+      internalID: -713979307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_123
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1301
+        width: 40
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da308bf74609f744b61daeda9648ea8
+      internalID: 1286882162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_124
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1301
+        width: 51
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b69e176af64e246abb04187a7f7a78
+      internalID: -1334450831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_125
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1302
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e78ff7d1384e14ebe35242e94b0acf
+      internalID: 1032872458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_126
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 1290
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c497f5428b1a36a43a34115aba992adc
+      internalID: -1212794528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_127
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1285
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593bc1feec8b9264d84de7d98d21d955
+      internalID: -40748514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_128
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 924
+        width: 694
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee2e848417df7a43a68e87c07bd2a1a
+      internalID: -58115280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_129
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1249
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2170cfc8367b5e1489dc54d41fa482fe
+      internalID: -685399688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_130
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1225
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a63642b92888e438c406da7b767ead
+      internalID: 1398472188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_131
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1254
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528d33572ef7f5344b55eb683a9f9938
+      internalID: -94396844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_132
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1224
+        width: 59
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40b3927367e9cb4ca8d4397c743f6f0
+      internalID: 447470437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_133
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1176
+        width: 102
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a03de0619d00a46ab464b6df92a4fa
+      internalID: -404963837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_134
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 856
+        width: 578
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba68312847878b478cc04055a8a4d1c
+      internalID: 1509043169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_135
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1206
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08aedbc4c1340694583cf7fc017e4f85
+      internalID: -979923259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_136
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 1082
+        width: 124
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0142f7cf8fd54d4b94f71b683f6e2c5
+      internalID: 1244997086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_137
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1188
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b4fb7c0f453c346958f4db01e4a3a3
+      internalID: 1669749064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_138
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1146
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3dea55bcc597c41969c60f8a4cb8e4
+      internalID: -627236859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_139
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1170
+        width: 59
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6014d8625990a34ea183586a3b8bbeb
+      internalID: 748693410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_140
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 875
+        width: 578
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608dffff8dad19e4e9f0dcd89053931f
+      internalID: 215604489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_141
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1158
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62f08c10bb4a924884dcf6cf5d35e99
+      internalID: 839926757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_142
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1004
+        width: 124
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb32d68bb77ff364dbee4b28680b76bd
+      internalID: 1501144242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_143
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1050
+        width: 126
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5be472bdeaacf642a62089cd002ed42
+      internalID: 1729226640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_144
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 1062
+        width: 54
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbaf8ff4dd8f284c8f6bf438537dc5b
+      internalID: -1221895697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_145
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 906
+        width: 72
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e35fae7e8e5f54a8c519fb1f83d686
+      internalID: -688544381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_146
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 1052
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7d130e4faa6c145b0704ff2f51a5c4
+      internalID: -553650560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_147
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 852
+        width: 68
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d50c1818593e2c42a42308060345e41
+      internalID: -1362742773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_148
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 1032
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4ae36a619bfd04ca8df8f5750ead04
+      internalID: -1676665664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_149
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 960
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce846b3a5fa73c49962c209dc25165a
+      internalID: 554167333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_150
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 1001
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab13ca0562c5f964db8c494d2c9a5bb6
+      internalID: 55080167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_151
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 870
+        width: 80
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ef8eab1fcc9da4f809cfa3c4494b8f
+      internalID: -324686225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_152
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 925
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ba9a7c523adf8458faaa117ae2663d
+      internalID: -74829360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_153
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 907
+        width: 173
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ff4d1e835fc8241b2e3fbdc435d9f3
+      internalID: -2106743482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_154
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 919
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8decf78ef5ee5a04d83d2f56a0531f41
+      internalID: -2003241740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_155
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 901
+        width: 154
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683671d58191c3444b48e4f16c265321
+      internalID: -1556347740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_156
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 913
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9d307cb4981b24a87f5ad817ce1601
+      internalID: 2052535384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_157
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 906
+        width: 100
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83255ef0f72eef04884620c664676555
+      internalID: -1630659567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_158
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 912
+        width: 42
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5671c32b45018bc46b075a0e05828710
+      internalID: 1158390859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_159
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 907
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f135c1c114e4649944d12f8090bec5
+      internalID: 1775173151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_160
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 900
+        width: 70
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498a749b96115ef4eb94b7bc248bf3f6
+      internalID: 81995529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_161
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 900
+        width: 33
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5414996c0571f4b84099aa2931bcad
+      internalID: -145645557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_162
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 896
+        width: 91
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9ae0f1c2c414e42b0e8e74afb17b12
+      internalID: 247281051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_163
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 865
+        width: 22
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d9b27c068539e4a8f9f03a82315e2f
+      internalID: -1667666925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_164
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 857
+        width: 127
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f915d08fc2bf8049a4a89c5f1a600be
+      internalID: -1133541423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_165
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 852
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281c14e308a21f34b87f823ea975b64d
+      internalID: 265543711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_166
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 858
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f948b6275cf31a46b1477ce642d56e5
+      internalID: 1604682181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_167
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 858
+        width: 132
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b442c0233356ce24aa4024851d56ad61
+      internalID: 106063999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_168
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 846
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efc803ca2d5d264e9c72518f64ca016
+      internalID: 409132877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_169
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 852
+        width: 28
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d580670fc04e545b8725568d28798d
+      internalID: 752694748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_170
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 846
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1645703a5e1d0ac44aa3f1594d48d292
+      internalID: -1125609464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_171
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 846
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21133636ff8a2874da03121cbeb2dc11
+      internalID: 1681512167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_172
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 846
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2aba6074257f14386b557c1124c31f
+      internalID: -1824379614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_173
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 792
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76bc8479b7b80744971c78b6d486f06
+      internalID: -1490654515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_174
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 810
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906cfd63a74f0df44915c51bc1933692
+      internalID: 1309580023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_175
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 834
+        width: 47
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b82d0c301310ef48b426e783afed7b0
+      internalID: -2083874600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_176
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 840
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a16e936fe6298949b8197f9a97f8dc3
+      internalID: 722708670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_177
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 836
+        width: 87
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c522a5b5d20a3464ca16a148acd8ac0a
+      internalID: -1609680025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_178
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 840
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e3fb404ffc992408f137e90c55b7f9
+      internalID: -1818778836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_179
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 828
+        width: 33
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205420e2c10855e419ca622205a468b0
+      internalID: 315358339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_180
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 825
+        width: 148
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ecd1eeedded874f90615031555f52d
+      internalID: -1293108784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_181
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 786
+        width: 76
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c61882f51bf3c740a35dba613ca21e9
+      internalID: -1549919604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_182
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 216
+        width: 576
+        height: 598
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7d51dc15ed95b439b914782c9fa04e
+      internalID: -464959462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_183
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 720
+        width: 42
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6373cf4146b4eb84c96d0ab6af1d2fe5
+      internalID: -1410425652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_184
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 786
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1bae00d26a3294f84e6989a153e1a3
+      internalID: 31447053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_185
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 154
+        width: 365
+        height: 650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e99f746ea5229439fc7b93f4ba15ef
+      internalID: -499097910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_186
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 780
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417d6f526dc99c448948711d616c83b4
+      internalID: -1833939300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_187
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 774
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b932878d20b478647b7ebae839a3d1ce
+      internalID: -2141298267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_188
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 774
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5403b413bd9be4a98514a3f48e9fae
+      internalID: 672983079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_189
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 726
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d794d01de2162364bab8ad5b74fc0b08
+      internalID: -403051929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_190
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 768
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fcf1d6d85d9134b82a737860822787
+      internalID: -6157164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_191
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 768
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7075db3137fc0794aad7e944d96ca8f0
+      internalID: -86768345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_192
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 762
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91216931c50ee764294c816a150c4282
+      internalID: -391507398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_193
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 762
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3217c8b3fee8e4ba38b61c4e08fa9e
+      internalID: 1302356604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_194
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 93
+        width: 426
+        height: 668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaac18e86134a54987890678242c6b2
+      internalID: -580953790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_195
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 756
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55baa34f33317b42a441d89f80958f3
+      internalID: 1462037472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_196
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 750
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bded2604031a12049b2d82d8e061d4b3
+      internalID: -167406308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_197
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 114
+        width: 404
+        height: 634
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04671435fa91f3b41b98de797c2d4e6e
+      internalID: -1106571219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_198
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 732
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c866f6789df20c43b30e916c2095929
+      internalID: -2037815579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_199
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 402
+        width: 18
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926d9862c2d959e4b966f7465b72f70b
+      internalID: -317031213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_200
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 372
+        width: 36
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ae6c55bc0457d49a0c7092222d6a37
+      internalID: 602178938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_201
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 414
+        width: 42
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753a9f12e30f04d40863e1f446ab9290
+      internalID: 1887612793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_202
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 432
+        width: 12
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062e156f2038ba947b5821dabeda87de
+      internalID: -1318880766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_203
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 456
+        width: 5
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13580d51da5d5cd469dca554e1a5a59f
+      internalID: 1062728144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_204
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 432
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748d616d00cf6124ebabe176c97bcb67
+      internalID: 339793137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_205
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 348
+        width: 24
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2b02017bce124409e17e9b4893bf0d
+      internalID: -1722512275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_206
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 426
+        width: 5
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542757f04de246247981b1dbe135c2d0
+      internalID: -726965488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_207
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 384
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea60cf607992144f97bb9583be149a8
+      internalID: 274186555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_208
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 336
+        width: 18
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccba73a0882d3b94e9caa46b0a4a2bbd
+      internalID: -355582926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_209
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 396
+        width: 6
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8247fdb763def4586e9f8014db5327
+      internalID: 1360939731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_210
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 402
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75eca0e60b5697546ae2b4107dacc1c3
+      internalID: -685694926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_211
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 284
+        width: 35
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff97115086114c8409421a686d9cfa4b
+      internalID: 1426492757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_212
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 372
+        width: 5
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7d3fa855fefce49ac1aacb504868f6
+      internalID: 393247109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_213
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 342
+        width: 5
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1240d839a68774c8f00f7fff1fcee9
+      internalID: 111762741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_214
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 330
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23dca41188cd1f5489d1853de37ff8a6
+      internalID: -1527015772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_215
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 348
+        width: 12
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5dcde46bb33cd04287c5ae481754412
+      internalID: -1157796646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_216
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 336
+        width: 6
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669d500c91118194ab9732a73145d3d8
+      internalID: -758925394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_217
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 342
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af25d10f35a28d44b6743852dac251f
+      internalID: 1410181161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_218
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 290
+        width: 8
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d002d59c29458f247b5ed88189ad0ef8
+      internalID: 1829394736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_219
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 260
+        width: 14
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d774a1e32f752d459b3da0d4cfa94cd
+      internalID: -1049724706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_220
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 264
+        width: 8
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c143a95ca0c7b4eaa408edb0de69a2
+      internalID: 1461527099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_221
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 210
+        width: 101
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c8b41168bf4ae42a2d2dbf50b15f8d
+      internalID: 242301051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_222
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 216
+        width: 53
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b61cfc864b3d24c883d67d1866881f
+      internalID: 1164928684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_223
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 253
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c99b5857a3b1941920db259c75cec9
+      internalID: -894954442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_224
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 229
+        width: 6
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a16a8fbb509488498af98beb77d6ab3
+      internalID: 304106461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_225
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 247
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175a3cf4f5441734c90db7077fc76e7e
+      internalID: -1683861031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_226
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 145
+        width: 114
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f14b4054bdfe94409a6ed733403f6c3
+      internalID: -2078674537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_227
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 204
+        width: 53
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9f172f558f48e4386a408123bca741
+      internalID: -760909530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_228
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 186
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44df14caca1431041bcfc09de361371c
+      internalID: -314445813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_229
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 211
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff52af34a16ba24aa003b392c4b1de0
+      internalID: 997423155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_230
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 212
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4e2537a60c7814882a2e618d334a28
+      internalID: -1778058041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_231
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 211
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a512818c6dc5a4b45a00c0d22bd1c3b9
+      internalID: -1256226641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_232
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 204
+        width: 39
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e62a31ee72c6946a221c525b6598b6
+      internalID: 1554582778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_233
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 133
+        width: 89
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7cc358489761c4cb1f4b608dcee913
+      internalID: -656053082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_234
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 133
+        width: 83
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1838dcbad6307454896d32cbfb7cbfa3
+      internalID: -27226201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_235
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 198
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211a8fcda659093438a3c5d78b973cc9
+      internalID: -1707213793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_236
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 192
+        width: 58
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a2fbd4b2253cf4a8e74c18384abbab
+      internalID: -1592268372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_237
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 192
+        width: 39
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3915093bbc5819d41a12a53c695bd773
+      internalID: 697436895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_238
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 186
+        width: 74
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cec0bfa95b4de54d9497df810d6fb80
+      internalID: 1414944767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_239
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 187
+        width: 76
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b805dfc99d03042459d866eea1f6db2f
+      internalID: 220626133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_240
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 144
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fae41a33384af04894eddf5bc6994f1
+      internalID: -1036386927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_241
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 138
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc7339b9d892e54ab495a2862a9dc66
+      internalID: -335506278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_242
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 139
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f8f3031e79df94d87cb43cca8484f6
+      internalID: 72325254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_243
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 132
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfce6823a72d93e44baaa641ceb754a6
+      internalID: 287518190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_244
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 133
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5cb98c897ea9449b1642ba8ba51c88
+      internalID: 132309723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_245
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 123
+        width: 89
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f9eaf569184b34f91c7d23c67861f7
+      internalID: -411128493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_246
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 126
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccea5d45cad826347b39e69d823f8dad
+      internalID: 2095752819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_247
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 108
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5a5607954d75949844f154b4d9be39
+      internalID: -1404372617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_248
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 102
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b467aa518850874193f3f26831b6624
+      internalID: -2126108421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_249
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 62
+        width: 83
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f3e5bfce88b6a48b898cd9de3a14f8
+      internalID: 761274208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_250
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 102
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d696bdf79f9e4a448af6741e3944056
+      internalID: 560819909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_251
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 96
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8420430c00dab44ac3887b17694b6b
+      internalID: -185764935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_252
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 96
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b699d6a7754408e48998e7ed9401878f
+      internalID: -1527755895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_253
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 91
+        width: 22
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487f41070e8fe324f971193957650ad5
+      internalID: -1205253142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave - RockCombinations1_254
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 88
+        width: 74
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9e344adf2b1f14c8ceecc119e02958
+      internalID: -1500388714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cave - RockCombinations1_0: 278951556
+      Cave - RockCombinations1_1: -1279382860
+      Cave - RockCombinations1_10: 720140213
+      Cave - RockCombinations1_100: 1934948423
+      Cave - RockCombinations1_101: 2087942610
+      Cave - RockCombinations1_102: -1145938536
+      Cave - RockCombinations1_103: 1359529872
+      Cave - RockCombinations1_104: -482984477
+      Cave - RockCombinations1_105: 701752906
+      Cave - RockCombinations1_106: -472902661
+      Cave - RockCombinations1_107: -690369773
+      Cave - RockCombinations1_108: 409436494
+      Cave - RockCombinations1_109: 524233486
+      Cave - RockCombinations1_11: 652994830
+      Cave - RockCombinations1_110: -979952024
+      Cave - RockCombinations1_111: 1149407510
+      Cave - RockCombinations1_112: 2054671698
+      Cave - RockCombinations1_113: 139927154
+      Cave - RockCombinations1_114: 862145808
+      Cave - RockCombinations1_115: -1776740571
+      Cave - RockCombinations1_116: -693888998
+      Cave - RockCombinations1_117: 401252931
+      Cave - RockCombinations1_118: -309012403
+      Cave - RockCombinations1_119: 1932179425
+      Cave - RockCombinations1_12: 757722057
+      Cave - RockCombinations1_120: -1521951918
+      Cave - RockCombinations1_121: -1043641517
+      Cave - RockCombinations1_122: -713979307
+      Cave - RockCombinations1_123: 1286882162
+      Cave - RockCombinations1_124: -1334450831
+      Cave - RockCombinations1_125: 1032872458
+      Cave - RockCombinations1_126: -1212794528
+      Cave - RockCombinations1_127: -40748514
+      Cave - RockCombinations1_128: -58115280
+      Cave - RockCombinations1_129: -685399688
+      Cave - RockCombinations1_13: -1444491193
+      Cave - RockCombinations1_130: 1398472188
+      Cave - RockCombinations1_131: -94396844
+      Cave - RockCombinations1_132: 447470437
+      Cave - RockCombinations1_133: -404963837
+      Cave - RockCombinations1_134: 1509043169
+      Cave - RockCombinations1_135: -979923259
+      Cave - RockCombinations1_136: 1244997086
+      Cave - RockCombinations1_137: 1669749064
+      Cave - RockCombinations1_138: -627236859
+      Cave - RockCombinations1_139: 748693410
+      Cave - RockCombinations1_14: 574058078
+      Cave - RockCombinations1_140: 215604489
+      Cave - RockCombinations1_141: 839926757
+      Cave - RockCombinations1_142: 1501144242
+      Cave - RockCombinations1_143: 1729226640
+      Cave - RockCombinations1_144: -1221895697
+      Cave - RockCombinations1_145: -688544381
+      Cave - RockCombinations1_146: -553650560
+      Cave - RockCombinations1_147: -1362742773
+      Cave - RockCombinations1_148: -1676665664
+      Cave - RockCombinations1_149: 554167333
+      Cave - RockCombinations1_15: 1619896144
+      Cave - RockCombinations1_150: 55080167
+      Cave - RockCombinations1_151: -324686225
+      Cave - RockCombinations1_152: -74829360
+      Cave - RockCombinations1_153: -2106743482
+      Cave - RockCombinations1_154: -2003241740
+      Cave - RockCombinations1_155: -1556347740
+      Cave - RockCombinations1_156: 2052535384
+      Cave - RockCombinations1_157: -1630659567
+      Cave - RockCombinations1_158: 1158390859
+      Cave - RockCombinations1_159: 1775173151
+      Cave - RockCombinations1_16: -400380937
+      Cave - RockCombinations1_160: 81995529
+      Cave - RockCombinations1_161: -145645557
+      Cave - RockCombinations1_162: 247281051
+      Cave - RockCombinations1_163: -1667666925
+      Cave - RockCombinations1_164: -1133541423
+      Cave - RockCombinations1_165: 265543711
+      Cave - RockCombinations1_166: 1604682181
+      Cave - RockCombinations1_167: 106063999
+      Cave - RockCombinations1_168: 409132877
+      Cave - RockCombinations1_169: 752694748
+      Cave - RockCombinations1_17: -1564938703
+      Cave - RockCombinations1_170: -1125609464
+      Cave - RockCombinations1_171: 1681512167
+      Cave - RockCombinations1_172: -1824379614
+      Cave - RockCombinations1_173: -1490654515
+      Cave - RockCombinations1_174: 1309580023
+      Cave - RockCombinations1_175: -2083874600
+      Cave - RockCombinations1_176: 722708670
+      Cave - RockCombinations1_177: -1609680025
+      Cave - RockCombinations1_178: -1818778836
+      Cave - RockCombinations1_179: 315358339
+      Cave - RockCombinations1_18: -430317205
+      Cave - RockCombinations1_180: -1293108784
+      Cave - RockCombinations1_181: -1549919604
+      Cave - RockCombinations1_182: -464959462
+      Cave - RockCombinations1_183: -1410425652
+      Cave - RockCombinations1_184: 31447053
+      Cave - RockCombinations1_185: -499097910
+      Cave - RockCombinations1_186: -1833939300
+      Cave - RockCombinations1_187: -2141298267
+      Cave - RockCombinations1_188: 672983079
+      Cave - RockCombinations1_189: -403051929
+      Cave - RockCombinations1_19: 647552637
+      Cave - RockCombinations1_190: -6157164
+      Cave - RockCombinations1_191: -86768345
+      Cave - RockCombinations1_192: -391507398
+      Cave - RockCombinations1_193: 1302356604
+      Cave - RockCombinations1_194: -580953790
+      Cave - RockCombinations1_195: 1462037472
+      Cave - RockCombinations1_196: -167406308
+      Cave - RockCombinations1_197: -1106571219
+      Cave - RockCombinations1_198: -2037815579
+      Cave - RockCombinations1_199: -317031213
+      Cave - RockCombinations1_2: -2093410869
+      Cave - RockCombinations1_20: 1002074103
+      Cave - RockCombinations1_200: 602178938
+      Cave - RockCombinations1_201: 1887612793
+      Cave - RockCombinations1_202: -1318880766
+      Cave - RockCombinations1_203: 1062728144
+      Cave - RockCombinations1_204: 339793137
+      Cave - RockCombinations1_205: -1722512275
+      Cave - RockCombinations1_206: -726965488
+      Cave - RockCombinations1_207: 274186555
+      Cave - RockCombinations1_208: -355582926
+      Cave - RockCombinations1_209: 1360939731
+      Cave - RockCombinations1_21: 1677147855
+      Cave - RockCombinations1_210: -685694926
+      Cave - RockCombinations1_211: 1426492757
+      Cave - RockCombinations1_212: 393247109
+      Cave - RockCombinations1_213: 111762741
+      Cave - RockCombinations1_214: -1527015772
+      Cave - RockCombinations1_215: -1157796646
+      Cave - RockCombinations1_216: -758925394
+      Cave - RockCombinations1_217: 1410181161
+      Cave - RockCombinations1_218: 1829394736
+      Cave - RockCombinations1_219: -1049724706
+      Cave - RockCombinations1_22: -576735877
+      Cave - RockCombinations1_220: 1461527099
+      Cave - RockCombinations1_221: 242301051
+      Cave - RockCombinations1_222: 1164928684
+      Cave - RockCombinations1_223: -894954442
+      Cave - RockCombinations1_224: 304106461
+      Cave - RockCombinations1_225: -1683861031
+      Cave - RockCombinations1_226: -2078674537
+      Cave - RockCombinations1_227: -760909530
+      Cave - RockCombinations1_228: -314445813
+      Cave - RockCombinations1_229: 997423155
+      Cave - RockCombinations1_23: 714204220
+      Cave - RockCombinations1_230: -1778058041
+      Cave - RockCombinations1_231: -1256226641
+      Cave - RockCombinations1_232: 1554582778
+      Cave - RockCombinations1_233: -656053082
+      Cave - RockCombinations1_234: -27226201
+      Cave - RockCombinations1_235: -1707213793
+      Cave - RockCombinations1_236: -1592268372
+      Cave - RockCombinations1_237: 697436895
+      Cave - RockCombinations1_238: 1414944767
+      Cave - RockCombinations1_239: 220626133
+      Cave - RockCombinations1_24: -125114518
+      Cave - RockCombinations1_240: -1036386927
+      Cave - RockCombinations1_241: -335506278
+      Cave - RockCombinations1_242: 72325254
+      Cave - RockCombinations1_243: 287518190
+      Cave - RockCombinations1_244: 132309723
+      Cave - RockCombinations1_245: -411128493
+      Cave - RockCombinations1_246: 2095752819
+      Cave - RockCombinations1_247: -1404372617
+      Cave - RockCombinations1_248: -2126108421
+      Cave - RockCombinations1_249: 761274208
+      Cave - RockCombinations1_25: 1173780840
+      Cave - RockCombinations1_250: 560819909
+      Cave - RockCombinations1_251: -185764935
+      Cave - RockCombinations1_252: -1527755895
+      Cave - RockCombinations1_253: -1205253142
+      Cave - RockCombinations1_254: -1500388714
+      Cave - RockCombinations1_26: -649151954
+      Cave - RockCombinations1_27: -2040147002
+      Cave - RockCombinations1_28: -1135681260
+      Cave - RockCombinations1_29: -1945950473
+      Cave - RockCombinations1_3: -1862055853
+      Cave - RockCombinations1_30: 364091002
+      Cave - RockCombinations1_31: 1064680838
+      Cave - RockCombinations1_32: -943584945
+      Cave - RockCombinations1_33: -1179948545
+      Cave - RockCombinations1_34: -480738228
+      Cave - RockCombinations1_35: -1853043487
+      Cave - RockCombinations1_36: 403613603
+      Cave - RockCombinations1_37: -1674187724
+      Cave - RockCombinations1_38: -2114549316
+      Cave - RockCombinations1_39: 728899135
+      Cave - RockCombinations1_4: -1925297217
+      Cave - RockCombinations1_40: -1604620378
+      Cave - RockCombinations1_41: 1164341235
+      Cave - RockCombinations1_42: 2118626649
+      Cave - RockCombinations1_43: 1408616182
+      Cave - RockCombinations1_44: 1945576290
+      Cave - RockCombinations1_45: 1131049550
+      Cave - RockCombinations1_46: 1719631565
+      Cave - RockCombinations1_47: 1543968165
+      Cave - RockCombinations1_48: -1323742173
+      Cave - RockCombinations1_49: -641168569
+      Cave - RockCombinations1_5: -1262982938
+      Cave - RockCombinations1_50: -894799527
+      Cave - RockCombinations1_51: 2465897
+      Cave - RockCombinations1_52: 1803275490
+      Cave - RockCombinations1_53: -143988194
+      Cave - RockCombinations1_54: -1858162271
+      Cave - RockCombinations1_55: 617208703
+      Cave - RockCombinations1_56: -1140886825
+      Cave - RockCombinations1_57: -60559247
+      Cave - RockCombinations1_58: -1548388713
+      Cave - RockCombinations1_59: -1742911667
+      Cave - RockCombinations1_6: -182532180
+      Cave - RockCombinations1_60: 1970680001
+      Cave - RockCombinations1_61: -278545556
+      Cave - RockCombinations1_62: -328745815
+      Cave - RockCombinations1_63: -1382959893
+      Cave - RockCombinations1_64: 2014561348
+      Cave - RockCombinations1_65: 1099536251
+      Cave - RockCombinations1_66: 2146316782
+      Cave - RockCombinations1_67: 622394193
+      Cave - RockCombinations1_68: -243447916
+      Cave - RockCombinations1_69: 854227764
+      Cave - RockCombinations1_7: -1117796758
+      Cave - RockCombinations1_70: -1048447599
+      Cave - RockCombinations1_71: 2026820858
+      Cave - RockCombinations1_72: 1249094482
+      Cave - RockCombinations1_73: 703102063
+      Cave - RockCombinations1_74: 1823615067
+      Cave - RockCombinations1_75: 1782848388
+      Cave - RockCombinations1_76: -684821289
+      Cave - RockCombinations1_77: -681362124
+      Cave - RockCombinations1_78: -768602900
+      Cave - RockCombinations1_79: -206174537
+      Cave - RockCombinations1_8: -1540821390
+      Cave - RockCombinations1_80: -1684823141
+      Cave - RockCombinations1_81: 573382932
+      Cave - RockCombinations1_82: -2116634807
+      Cave - RockCombinations1_83: -1528465901
+      Cave - RockCombinations1_84: -1432671179
+      Cave - RockCombinations1_85: -391945079
+      Cave - RockCombinations1_86: -1871608116
+      Cave - RockCombinations1_87: 722628060
+      Cave - RockCombinations1_88: 1110261461
+      Cave - RockCombinations1_89: 1885864278
+      Cave - RockCombinations1_9: 237239182
+      Cave - RockCombinations1_90: -2001754727
+      Cave - RockCombinations1_91: 1064876609
+      Cave - RockCombinations1_92: -834733623
+      Cave - RockCombinations1_93: -1529912181
+      Cave - RockCombinations1_94: -451976334
+      Cave - RockCombinations1_95: 2001102301
+      Cave - RockCombinations1_96: 1675014167
+      Cave - RockCombinations1_97: -1283409331
+      Cave - RockCombinations1_98: -68624485
+      Cave - RockCombinations1_99: -1316695142
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
