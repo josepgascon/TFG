@@ -11,13 +11,18 @@ public class PlayerController : MonoBehaviour
     public float height;
     private Vector2 dir;
     public Transform tr;
+    private bool damaged; 
+    private Animator anim;
+
 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         tr = GetComponent<Transform>();
+        anim = GetComponent<Animator>();
         dir.x = 1;
+        damaged = false;
     }
 
 
@@ -37,10 +42,23 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Has xocat1");
 
+        if(damaged == false)
+        {
+            anim.Play("IdleDamagedPlayer");
+            damaged = true;
+        }
+        else
+        {
+            anim.Play("PlayerExplosion");
+            //Destroy(this.gameObject);
+        }
+
+
         if (collision.gameObject.tag == "Mine")
         {
             Debug.Log("Has xocat!2");
-            Destroy(collision.gameObject);
+
+            //Destroy(collision.gameObject);
             //cam.Screenshake(10, 2);
         }
     }
