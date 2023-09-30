@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public Transform tr;
     private bool damaged; 
     private Animator anim;
+    public bool indestructible;
+    public CameraMove cameraMovement;
 
 
 
@@ -21,6 +23,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         tr = GetComponent<Transform>();
         anim = GetComponent<Animator>();
+        //cameraMovement = GetComponent<CameraMove>();
         dir.x = 1;
         damaged = false;
     }
@@ -42,24 +45,55 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Has xocat1");
 
-        if(damaged == false)
+        if (collision.gameObject.tag == "Mine" || collision.gameObject.tag == "Patrol")
         {
-            anim.Play("IdleDamagedPlayer");
-            damaged = true;
+
+            if (indestructible)
+            {
+                //this.transform.Rotate(0f, 180f, 0f, Space.Self);
+                //anim.Play("IdleReverse");
+            }
+
+            if (!indestructible)
+            {
+
+                if (damaged == false)
+                {
+                    anim.Play("IdleDamagedPlayer");
+                    damaged = true;
+                }
+                else
+                {
+                    anim.Play("PlayerExplosion");
+                    //Destroy(this.gameObject);
+                }
+            }
         }
-        else
+
+        else if (collision.gameObject.tag == "Patrol")
         {
-            anim.Play("PlayerExplosion");
-            //Destroy(this.gameObject);
+            if (!indestructible)
+            {
+
+                if (damaged == false)
+                {
+                    //this.transform. //(0f, 180f, 0f, Space.Self);
+                    anim.Play("IdleDamagedPlayer");
+                    damaged = true;
+                }
+                else
+                {
+                    anim.Play("PlayerExplosion");
+                    //Destroy(this.gameObject);
+                }
+            }
         }
 
-
-        if (collision.gameObject.tag == "Mine")
+        if (collision.gameObject.tag == "Chest")
         {
-            Debug.Log("Has xocat!2");
-
-            //Destroy(collision.gameObject);
-            //cam.Screenshake(10, 2);
+            speed = -speed;
+            cameraMovement.speed = speed;
+            this.transform.Rotate(0f, 180f, 0f, Space.Self);
         }
     }
-}
+    }
