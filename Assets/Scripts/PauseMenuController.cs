@@ -22,11 +22,22 @@ public class PauseMenuController : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
-
     public void MenuClick()
     {
         SceneManager.LoadScene("Menú");
+    }
 
+    public void PlayLevel1()
+    {
+        SceneManager.LoadScene("Level1");
+    }
+    public void PlayLevel2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+    public void PlayLevel3()
+    {
+        SceneManager.LoadScene("Level3");
     }
 
 }

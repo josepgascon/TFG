@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -17,14 +18,15 @@ public class GameController : MonoBehaviour
     public Slider percentageSlider;
     public int gravity = 0;
     public float percentage = 0.31f;
-    public Slider end_slider;
     public GameObject end_menu;
     public TMP_Text EndText1;
     public TMP_Text EndText2;
     public GameObject chest;
     private float total_distance;
     private float new_distance;
-
+    public AudioSource rock_sound;
+    public AudioSource radar_sound;
+    private Boolean sound_radar;
 
     private void Awake()
     {
@@ -43,13 +45,13 @@ public class GameController : MonoBehaviour
         pressureText.text = (int)(rb.velocity.y * 100) + "%";
         percentageSlider.value = percentage;
         total_distance = Vector2.SqrMagnitude(this.transform.position - chest.transform.position);
-
+        sound_radar = true;
         //_slider = GetComponent<Slider>();
 
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         rb.velocity = new Vector2(speed, rb.velocity.y);
         rb.gravityScale = _slider.value;
@@ -58,6 +60,7 @@ public class GameController : MonoBehaviour
         CalculatePercentage(Vector2.SqrMagnitude(this.transform.position - chest.transform.position));
         pressureText.text = "                 " + (int)(rb.velocity.y * 1) + " atm";
         percentageSlider.value = percentage;
+        if (sound_radar)StartCoroutine(Wait5Second());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -67,6 +70,11 @@ public class GameController : MonoBehaviour
         if (collision.gameObject.tag == "Mine" || collision.gameObject.tag == "Patrol" || collision.gameObject.tag == "Cave")
         {
             Debug.Log("Has xocat2");
+
+            if (collision.gameObject.tag == "Cave")
+            {
+                rock_sound.Play();
+            }
 
             if (indestructible)
             {
@@ -103,8 +111,7 @@ public class GameController : MonoBehaviour
 
         else if (collision.gameObject.tag == "Finish")
         {
-            EndText1.text = "YOU LOSE!";
-            end_slider.value = 1;
+            EndText1.text = "YOU WON!";
             EndText2.text = "100% COMPLETED";
             end_menu.SetActive(true);
             Time.timeScale = 0;
@@ -126,18 +133,17 @@ public class GameController : MonoBehaviour
 
     IEnumerator Wait1Second()
     {
-        //Print the time of when the function is first called.
-        Debug.Log("Started Coroutine at timestamp : " + Time.time);
-
-        //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(0.6f);
-
-        end_slider.value = percentage;
         EndText2.text = (int)(percentage * 100) + "% COMPLETED";
         end_menu.SetActive(true);
         Time.timeScale = 0;
+    }
 
-        //After we have waited 5 seconds print the time again.
-        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+    IEnumerator Wait5Second()
+    {
+        sound_radar = false;
+        radar_sound.Play();
+        yield return new WaitForSeconds(5f);
+        sound_radar = true;
     }
 }
