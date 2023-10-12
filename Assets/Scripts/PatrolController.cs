@@ -8,9 +8,7 @@ using Unity.VisualScripting.Antlr3.Runtime;
 public class PatrolController : MonoBehaviour
 {
 
-    public bool Explosion;
-    private Animator anim;
-    public CinemachineVirtualCameraBase cam;
+    public AudioSource jellyfish_sound;
     public float y;
     float speed = 2f;
     float range = 1f;
@@ -19,8 +17,6 @@ public class PatrolController : MonoBehaviour
     void Start()
     {
         //haig de fer getcomponent animator
-        Explosion = false;
-        anim = GetComponent<Animator>();
         yStart = this.transform.position.y;
     }
 
@@ -41,10 +37,10 @@ public class PatrolController : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-            Explosion = true;
-            anim.Play("ExplosionAnim");
             GetComponent<CircleCollider2D>().enabled = false;
-            CinemachineShake.Instance.Shake(5f, 1f);
+            CinemachineShake.Instance.Shake(1f, 1f);
+            jellyfish_sound.Play();
+
         }
     }
 

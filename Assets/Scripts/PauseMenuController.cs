@@ -15,6 +15,10 @@ public class PauseMenuController : MonoBehaviour
         pauseMenu.SetActive(true);
     }
 
+    public void LevelMenuClickdesdeLevel()
+    {
+        SceneManager.LoadScene("LevelMenú");
+    }
     public void ResumeClick()
     {
         Debug.Log("You have clicked the button resume");

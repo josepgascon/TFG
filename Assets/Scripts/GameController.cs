@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -27,6 +28,9 @@ public class GameController : MonoBehaviour
     public AudioSource rock_sound;
     public AudioSource radar_sound;
     private Boolean sound_radar;
+    //private Boolean user_deleted;
+    string user; 
+    string level;
 
     private void Awake()
     {
@@ -46,7 +50,14 @@ public class GameController : MonoBehaviour
         percentageSlider.value = percentage;
         total_distance = Vector2.SqrMagnitude(this.transform.position - chest.transform.position);
         sound_radar = true;
+        //user_deleted = false;
         //_slider = GetComponent<Slider>();
+
+        user = Main.currentUser.ToString();
+        level = SceneManager.GetActiveScene().buildIndex.ToString();
+        Debug.Log("user1 = " + user);
+        Debug.Log("level = " + level);
+        StartCoroutine(Main.Instance.DBController.GetUserLevelAttempt(user, level));
 
     }
 
@@ -65,11 +76,11 @@ public class GameController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Has xocat1");
+        Debug.Log("Has xocat");
 
         if (collision.gameObject.tag == "Mine" || collision.gameObject.tag == "Patrol" || collision.gameObject.tag == "Cave")
         {
-            Debug.Log("Has xocat2");
+            //Debug.Log("Has xocat2");
 
             if (collision.gameObject.tag == "Cave")
             {
@@ -91,11 +102,13 @@ public class GameController : MonoBehaviour
                 {
                     anim.Play("IdleDamagedPlayer");
                     damaged = true;
+                    StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
                 }
                 else
                 {
                     anim.Play("PlayerExplosion");
-                    StartCoroutine(Wait1Second()); 
+                    StartCoroutine(Wait1Second());
+                    SendStats();
                     //EndText1.text = "YOU WON!";
 
                 }
@@ -106,6 +119,7 @@ public class GameController : MonoBehaviour
         {
             speed = -speed;
             cameraMovement.speed = speed;
+            if(!damaged) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
             this.transform.Rotate(0f, 180f, 0f, Space.Self);
         }
 
@@ -113,10 +127,36 @@ public class GameController : MonoBehaviour
         {
             EndText1.text = "YOU WON!";
             EndText2.text = "100% COMPLETED";
+            percentage = 1f;
+            SendStats();
             end_menu.SetActive(true);
             Time.timeScale = 0;
         }
 
+    }
+
+    private void SendStats()
+    {
+
+        Debug.Log("user2 = " + user);
+        Debug.Log("level = " + level);
+
+        Debug.Log("5 del main ");
+        Debug.Log(Main.user_level_id);
+        Debug.Log(Main.attempts);
+        Debug.Log(Main.average_score);
+        Debug.Log(Main.max_score);
+        Debug.Log(Main.perfectly_completed);
+
+        //update stats
+        int attempts = Main.attempts + 1;
+        int average_score = Main.average_score;
+        average_score = (int)((Main.attempts * average_score) + (percentage * 100)) / attempts;
+        float new_score = percentage * 100;
+        if ((int)new_score > Main.max_score) Main.max_score = (int)new_score;
+        if (percentage == 1f && damaged == false) Main.perfectly_completed = 1;
+
+        StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(user, level, attempts.ToString(), average_score.ToString(), Main.max_score.ToString(), Main.perfectly_completed.ToString()));
     }
 
     void CalculatePercentage(float new_distance)
@@ -137,6 +177,12 @@ public class GameController : MonoBehaviour
         EndText2.text = (int)(percentage * 100) + "% COMPLETED";
         end_menu.SetActive(true);
         Time.timeScale = 0;
+    }
+
+    IEnumerator WaitUserDeleted()
+    {
+        yield return new WaitForSeconds(0.5f);
+        //user_deleted = true;
     }
 
     IEnumerator Wait5Second()
