@@ -1,16 +1,9 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
-using UnityEngine.UIElements;
 using TMPro;
-using Unity.Collections;
 using SimpleJSON;
 
-
-// UnityWebRequest.Get example
-
-// Access a website and use UnityWebRequest.Get to download a page.
-// Also try to download a non-existing page. Display the error.
 
 public class DBController : MonoBehaviour
 {
@@ -19,23 +12,12 @@ public class DBController : MonoBehaviour
 
     void Start()
     {
-        // A correct website page.
         //StartCoroutine(GetRequest("https://subcavexplorer.000webhostapp.com/GetUsers.php"));
-        //StartCoroutine(Login("pep1", "123"));
-        //StartCoroutine(RegisterUser("pep5", "1234"));
-        //StartCoroutine(GetUserLevel("1"));
-
-        // A non-existing page.
-        //StartCoroutine(GetRequest("https://error.html"));
     }
 
     public void ShowUserLevel()
     {
-        Debug.Log("eu");
-
         Debug.Log(Main.Instance.UserInfo.UserID);
-
-       // StartCoroutine(GetUserLevel(Main.Instance.UserInfo.UserID));
     }
 
     public IEnumerator GetRequest(string uri)
@@ -86,7 +68,6 @@ public class DBController : MonoBehaviour
 
             if (www.downloadHandler.text.Contains("Wrong password") || www.downloadHandler.text.Contains("Username does not exist"))
             {
-                //Debug.Log("Try again");
                 SignInText.text = www.downloadHandler.text;
             }
             else
@@ -94,9 +75,6 @@ public class DBController : MonoBehaviour
                 Main.currentUser = int.Parse(www.downloadHandler.text);
                 Main.Instance.LevelMenu.SetActive(true);
                 Main.Instance.Login.gameObject.SetActive(false);
-
-                //Attempts a = gameObject.GetComponent<Attempts>();
-                //a.CreateAttempts();
             }
 
         }
@@ -113,13 +91,11 @@ public class DBController : MonoBehaviour
 
         if (www.downloadHandler.text.Contains("Username is already taken"))
         {
-            //Debug.Log(www.error);
             SignUpText.text = "Username is already taken";
 
         }
         else
         {
-           
             www = UnityWebRequest.Post("https://subcavexplorer.000webhostapp.com/Login.php", form);
             yield return www.SendWebRequest();
 
@@ -144,8 +120,6 @@ public class DBController : MonoBehaviour
         UnityWebRequest www = UnityWebRequest.Post("https://subcavexplorer.000webhostapp.com/RegisterAttempt.php", form);
         yield return www.SendWebRequest();
         Debug.Log(www.downloadHandler.text);
-
-        
     }
 
     public IEnumerator GetUser()
@@ -195,8 +169,6 @@ public class DBController : MonoBehaviour
 
     public IEnumerator GetUserLevelAttempt(string user_id, string level_id)
     {
-        Debug.Log("1 p");
-
         WWWForm form = new WWWForm();
         form.AddField("user_id", user_id);
         form.AddField("level_id", level_id);
@@ -205,8 +177,6 @@ public class DBController : MonoBehaviour
         {
             // Request and wait for the desired page.
             yield return www.SendWebRequest();
-            Debug.Log("2 p");
-
             if (www.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(www.error);
@@ -215,10 +185,7 @@ public class DBController : MonoBehaviour
             {
 
                 Debug.Log(www.downloadHandler.text);
-
                 string jsonArrayString = www.downloadHandler.text;
-
-                Debug.Log("aixo va be?");
                 JSONArray attemptInfoJsonArray = new JSONArray();
                 attemptInfoJsonArray = (JSONArray)JSON.Parse(jsonArrayString);
                 Debug.Log(attemptInfoJsonArray);
@@ -244,8 +211,6 @@ public class DBController : MonoBehaviour
 
     public IEnumerator DeleteUserLevelAttempt(string user_id, string level_id)
     {
-        Debug.Log("2 d");
-
         WWWForm form = new WWWForm();
         form.AddField("user_id", user_id);
         form.AddField("level_id", level_id);
@@ -269,8 +234,6 @@ public class DBController : MonoBehaviour
 
     public IEnumerator RegisterUserLevelAttempt(string user_id, string level_id, string attempts, string average_score, string max_score, string perfectly_completed)
     {
-        Debug.Log("2 d");
-
         WWWForm form = new WWWForm();
         form.AddField("user_id", user_id);
         form.AddField("level_id", level_id);

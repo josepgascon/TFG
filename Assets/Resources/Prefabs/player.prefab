@@ -395,8 +395,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _slider: {fileID: 0}
+  mainCamera: {fileID: 3445418313137126046, guid: cdebf18616377e74ba3d516220878e33, type: 3}
   indestructible: 0
-  cameraMovement: {fileID: 0}
+  cameraMovement: {fileID: 5312001881402614377, guid: 3ba2649fc7e75544d86322e038dd2b89, type: 3}
   speed: 3
   pressureText: {fileID: 0}
   percentageSlider: {fileID: 0}

@@ -1,12 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System;
 
 public class PauseMenuController : MonoBehaviour
 {
     public GameObject pauseMenu;
-
 
     public void PauseClick()
     {

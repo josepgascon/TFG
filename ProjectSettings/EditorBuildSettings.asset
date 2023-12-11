@@ -22,8 +22,8 @@ EditorBuildSettings:
     guid: d3e791bd27ccbb2458149f9829ab09e5
   - enabled: 1
     path: Assets/Scenes/Demo.unity
-    guid: 8f6e49328d1f23a4ebe68ad0696bbcb8
+    guid: 005075e47bfd7c8449ad8d55c5fe7fa8
   - enabled: 1
     path: "Assets/Scenes/LevelMen\xFA.unity"
-    guid: 5d4421908043be34ea105216cc094ad9
+    guid: f88850df78c9bc246834539be995d49d
   m_configObjects: {}

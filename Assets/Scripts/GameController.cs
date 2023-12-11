@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +10,8 @@ public class GameController : MonoBehaviour
     private Rigidbody2D rb;
     public Slider _slider;
     private Animator anim;
+   // public new Camera mainCamera;
+    //public SoundController soundController;
     public bool indestructible;
     public CameraMove cameraMovement;
     public float speed;
@@ -24,11 +25,10 @@ public class GameController : MonoBehaviour
     public TMP_Text EndText2;
     public GameObject chest;
     private float total_distance;
-    private float new_distance;
     public AudioSource rock_sound;
     public AudioSource radar_sound;
     private Boolean sound_radar;
-    //private Boolean user_deleted;
+    private Boolean calculate_percentage;
     string user; 
     string level;
 
@@ -42,26 +42,23 @@ public class GameController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //gravity = rb.gravityScale;
-        // percentageText.text = (int)(percentage * 100) + "GRAVITY = " + _slider.value;
         Time.timeScale = 1f;
-        percentage = 0.31f;
-        pressureText.text = (int)(rb.velocity.y * 100) + "%";
-        percentageSlider.value = percentage;
         total_distance = Vector2.SqrMagnitude(this.transform.position - chest.transform.position);
         sound_radar = true;
-        //user_deleted = false;
-        //_slider = GetComponent<Slider>();
-
+        calculate_percentage = true;
         user = Main.currentUser.ToString();
         level = SceneManager.GetActiveScene().buildIndex.ToString();
         Debug.Log("user1 = " + user);
         Debug.Log("level = " + level);
         StartCoroutine(Main.Instance.DBController.GetUserLevelAttempt(user, level));
 
+        Debug.Log("game_controller");
+
+        Debug.Log("audio_enabled = " + Main.AudioEnabled);
+
+
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         rb.velocity = new Vector2(speed, rb.velocity.y);
@@ -76,28 +73,15 @@ public class GameController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Has xocat");
-
         if (collision.gameObject.tag == "Mine" || collision.gameObject.tag == "Patrol" || collision.gameObject.tag == "Cave")
         {
-            //Debug.Log("Has xocat2");
-
             if (collision.gameObject.tag == "Cave")
             {
                 rock_sound.Play();
             }
 
-            if (indestructible)
+            if (!indestructible)
             {
-                //this.transform.Rotate(0f, 180f, 0f, Space.Self);
-            }
-
-
-            else if (!indestructible)
-            {
-                Debug.Log("Has xocat3");
-
-
                 if (damaged == false)
                 {
                     anim.Play("IdleDamagedPlayer");
@@ -109,8 +93,6 @@ public class GameController : MonoBehaviour
                     anim.Play("PlayerExplosion");
                     StartCoroutine(Wait1Second());
                     SendStats();
-                    //EndText1.text = "YOU WON!";
-
                 }
             }
         }
@@ -119,8 +101,8 @@ public class GameController : MonoBehaviour
         {
             speed = -speed;
             cameraMovement.speed = speed;
-            if(!damaged) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
             this.transform.Rotate(0f, 180f, 0f, Space.Self);
+            if (!damaged) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
         }
 
         else if (collision.gameObject.tag == "Finish")
@@ -128,20 +110,18 @@ public class GameController : MonoBehaviour
             EndText1.text = "YOU WON!";
             EndText2.text = "100% COMPLETED";
             percentage = 1f;
-            SendStats();
             end_menu.SetActive(true);
             Time.timeScale = 0;
+            SendStats();
         }
 
     }
 
     private void SendStats()
     {
-
-        Debug.Log("user2 = " + user);
+        Debug.Log("user = " + user);
         Debug.Log("level = " + level);
 
-        Debug.Log("5 del main ");
         Debug.Log(Main.user_level_id);
         Debug.Log(Main.attempts);
         Debug.Log(Main.average_score);
@@ -179,17 +159,19 @@ public class GameController : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    IEnumerator WaitUserDeleted()
-    {
-        yield return new WaitForSeconds(0.5f);
-        //user_deleted = true;
-    }
-
     IEnumerator Wait5Second()
     {
         sound_radar = false;
         radar_sound.Play();
         yield return new WaitForSeconds(5f);
         sound_radar = true;
+    }
+
+    IEnumerator WaitLessThanASecond()
+    {
+        calculate_percentage = false;
+        CalculatePercentage(Vector2.Distance(this.transform.position, chest.transform.position));
+        yield return new WaitForSeconds(0.2f);
+        calculate_percentage = true;
     }
 }
