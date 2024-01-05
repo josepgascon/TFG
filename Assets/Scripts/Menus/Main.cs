@@ -19,6 +19,8 @@ public class Main : MonoBehaviour
     public static int max_score; 
     public static int perfectly_completed;
     public static bool AudioEnabled;
+    public static float speed;
+
     void Start()
     {
         Instance = this;

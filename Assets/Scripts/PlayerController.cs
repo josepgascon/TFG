@@ -9,57 +9,74 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public Slider _slider;
     public float speed;
-    //public float height;
     private Vector2 dir;
     private Transform tr;
-    private bool damaged; 
+    private bool damaged;
     private Animator anim;
     public bool indestructible;
-    public CameraMove cameraMovement;
+    public ObjectMove cameraMovement;
     private Vector2 velocity;
     private Rigidbody2D rbrb;
 
-
-
+    private const float accelerationRate = 1.5f; // Adjust the acceleration rate as needed
+    private bool isAccelerating;
+    private bool isDecelerating;
 
     private void Awake()
     {
         rbrb = GetComponent<Rigidbody2D>();
         tr = GetComponent<Transform>();
         anim = GetComponent<Animator>();
-        //cameraMovement = GetComponent<CameraMove>();
-        //dir.x = 1;
         damaged = false;
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //_slider.onValueChanged.AddListener(UpdateValue);
-
-        _slider.value = 0f;
-    }
-
-
-    //update
     void Update()
     {
-        //Debug.Log("_slider.value = " + _slider.value);
-        velocity = new Vector2(3f, (_slider.value * -5f));
+        velocity.y = _slider.value * -5f;
         rbrb.MovePosition(rbrb.position + velocity * Time.fixedDeltaTime);
+
+        // Handle button inputs for acceleration and deceleration
+        HandleButtonInput();
+    }
+
+    void HandleButtonInput()
+    {
+        // Handle acceleration
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            isAccelerating = true;
+            isDecelerating = false;
+        }
+
+        // Handle deceleration
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            isDecelerating = true;
+            isAccelerating = false;
+        }
+
+        // Gradually accelerate
+        if (isAccelerating)
+        {
+            velocity.x = Mathf.Lerp(velocity.x, speed, Time.deltaTime * accelerationRate);
+        }
+
+        // Gradually decelerate
+        if (isDecelerating)
+        {
+            velocity.x = Mathf.Lerp(velocity.x, 0f, Time.deltaTime * accelerationRate);
+        }
     }
 
 
+/*  // Update is called once per frame
+  void FixedUpdate()
+  {
+      velocity = new Vector2(dir.x * speed, rb.velocity.y);
+      rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
+  }  */
 
-  /*  // Update is called once per frame
-    void FixedUpdate()
-    {
-        velocity = new Vector2(dir.x * speed, rb.velocity.y);
-        rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
-    }  */
-
-    private void OnTriggerEnter2D(Collider2D collision)
+private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Has xocat1");
 
