@@ -83,4 +83,22 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Demo");
     }
+
+    public void EndlessClick()
+    {
+        SceneManager.LoadScene("Endless");
+    }
+
+    public void GuestClick()
+    {
+        Debug.Log(" Main.currentUser =" + Main.currentUser);
+        Main.currentUser = -1;
+        Debug.Log(" Main.currentUser =" + Main.currentUser);
+
+        mainMenu.SetActive(false);
+        loginMenu.SetActive(false);
+        registerMenu.SetActive(false);
+        levelMenu.SetActive(true);
+        StatsMenu.SetActive(false);
+    }
 }

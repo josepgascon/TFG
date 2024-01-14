@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6912785259706180755}
   - component: {fileID: 564308515987354206}
   - component: {fileID: 2308350628298007158}
-  - component: {fileID: 3491283803269352505}
   - component: {fileID: 6534791993321777673}
-  - component: {fileID: 6397407131719083649}
+  - component: {fileID: -1095721690071037295}
+  - component: {fileID: 5891095774547547181}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Chest
@@ -270,19 +270,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &3491283803269352505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7358994283181813354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65e1f60c5781aa488dd2e7476927af9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Opened: 0
 --- !u!82 &6534791993321777673
 AudioSource:
   m_ObjectHideFlags: 0
@@ -379,7 +366,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6397407131719083649
+--- !u!114 &-1095721690071037295
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,7 +375,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 7358994283181813354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1151c7bedb0db544ebfa1232b4899dfe, type: 3}
+  m_Script: {fileID: 11500000, guid: b9b420702779f3f4f96067c6281b7915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 6534791993321777673}
+--- !u!114 &5891095774547547181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7358994283181813354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7da311f0b704a45923216ac952d55f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 6534791993321777673}

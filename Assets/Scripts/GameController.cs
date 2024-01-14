@@ -32,6 +32,13 @@ public class GameController : MonoBehaviour
     string user;
     string level;
     int dir;
+    public GameObject heart;
+    private int star_count = 0;
+    public Image star1;
+    public Image star2;
+    public Image star3;
+    public Sprite star;
+    private bool finish = false;
 
     private bool isAccelerating;
     private bool isDecelerating;
@@ -43,26 +50,24 @@ public class GameController : MonoBehaviour
         damaged = false;
         isAccelerating = false;
         isDecelerating = false; 
-         dir = 1;
+        dir = 1;
     }
     // Start is called before the first frame update
     void Start()
     {
+
         rb = GetComponent<Rigidbody2D>();
         Time.timeScale = 1f;
-        total_distance = Vector2.SqrMagnitude(this.transform.position - chest.transform.position);
+        total_distance = Vector2.Distance(this.transform.position, chest.transform.position);
         sound_radar = true;
         calculate_percentage = true;
         user = Main.currentUser.ToString();
         level = SceneManager.GetActiveScene().buildIndex.ToString();
         Debug.Log("user1 = " + user);
         Debug.Log("level = " + level);
-        StartCoroutine(Main.Instance.DBController.GetUserLevelAttempt(user, level));
+        if(Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.GetUserLevelAttempt(user, level));
 
-        Debug.Log("game_controller");
-
-        Debug.Log("audio_enabled = " + Main.AudioEnabled);
-
+        Debug.Log(" Main.currentUser =" + Main.currentUser);
 
     }
 
@@ -73,30 +78,44 @@ public class GameController : MonoBehaviour
         Vector3 x = this.transform.position;
         cameraMovement.rb.velocity = new Vector2(3f*dir, 0);
 
-        //CalculatePercentage(Vector2.SqrMagnitude(this.transform.position - chest.transform.position));
-        if (calculate_percentage) StartCoroutine(Percentage());
+        if (calculate_percentage) StartCoroutine(Percentage()); //cada 0.2 segons calcula el percentatge de nivell que s'ha recorregut
 
         pressureText.text = "                 " + (int)(rb.velocity.y * 1) + " atm";
         percentageSlider.value = percentage;
         if (sound_radar) StartCoroutine(PlayRadar5Second());
 
-        // accelerate
-        if (isAccelerating)
+        if (dir == 1)
         {
+            if (isAccelerating)
+            {
+                if (this.transform.position.x >= cameraMovement.transform.position.x + 8f) isAccelerating = false;
+                speed = 6f;
+                Debug.Log("isAccelerating = true perro");
 
-            if (this.transform.position.x >= cameraMovement.transform.position.x + 8f) isAccelerating = false;
-
-            speed = 6f;
-            Debug.Log("isAccelerating = true perro");
-
+            }
+            else if (isDecelerating)
+            {
+                if (this.transform.position.x <= cameraMovement.transform.position.x - 8f) isDecelerating = false;
+                speed = 1f;
+            }
+            else speed = 3f;
         }
-        // decelerate
-        else if (isDecelerating)
+        else
         {
-            if (this.transform.position.x <= cameraMovement.transform.position.x - 8f) isDecelerating = false;
-            speed = 1f;
+            if (isAccelerating)
+            {
+                if (this.transform.position.x <= cameraMovement.transform.position.x - 8f) isAccelerating = false;
+                speed = 1f;
+                Debug.Log("isAccelerating = true perro");
+
+            }
+            else if (isDecelerating)
+            {
+                if (this.transform.position.x >= cameraMovement.transform.position.x + 8f) isDecelerating = false;
+                speed = 6f;
+            }
+            else speed = 3f;
         }
-        else speed = 3f;
 
     }
 
@@ -140,6 +159,7 @@ public class GameController : MonoBehaviour
             {
                 if (damaged == false)
                 {
+                    heart.SetActive(false);
                     if (collision.gameObject.tag == "Cave")
                     {
                         rock_sound.Play();
@@ -147,35 +167,44 @@ public class GameController : MonoBehaviour
 
                     anim.Play("IdleDamagedPlayer");
                     damaged = true;
-                    StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
-
 
                 }
                 else
                 {
+                    if (Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
                     anim.Play("PlayerExplosion");
                     StartCoroutine(Endgame());
-                    SendStats();
                 }
             }
         }
+
+        else if (collision.gameObject.tag == "Star")
+        {
+            
+            star_count++;
+            if (star_count == 1) star1.sprite = star;
+            else if (star_count == 2) star2.sprite = star;
+            else if (star_count == 3) star3.sprite = star;
+            //cameraMovement.speed = speed;
+            //this.transform.Rotate(0f, 180f, 0f, Space.Self);
+            //if (!damaged) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
+        }
+
 
         else if (collision.gameObject.tag == "Chest")
         {
             dir = -1;
             //cameraMovement.speed = speed;
             this.transform.Rotate(0f, 180f, 0f, Space.Self);
-            if (!damaged) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
+            //if (!damaged) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
         }
 
         else if (collision.gameObject.tag == "Finish")
         {
+            if (Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
             EndText1.text = "YOU WON!";
-            EndText2.text = "100% COMPLETED";
-            percentage = 1f;
-            end_menu.SetActive(true);
-            Time.timeScale = 0;
-            SendStats();
+            finish = true;
+            StartCoroutine(Endgame());
         }
 
     }
@@ -197,14 +226,14 @@ public class GameController : MonoBehaviour
         average_score = (int)((Main.attempts * average_score) + (percentage * 100)) / attempts;
         float new_score = percentage * 100;
         if ((int)new_score > Main.max_score) Main.max_score = (int)new_score;
-        if (percentage == 1f && damaged == false) Main.perfectly_completed = 1;
+        if (percentage == 1f && damaged == false && star_count == 3) Main.perfectly_completed = 1;
 
-        StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(user, level, attempts.ToString(), average_score.ToString(), Main.max_score.ToString(), Main.perfectly_completed.ToString()));
+        if (Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(user, level, attempts.ToString(), average_score.ToString(), Main.max_score.ToString(), Main.perfectly_completed.ToString()));
     }
 
     void CalculatePercentage(float new_distance)
     {
-        if (speed > 0)
+        if (dir > 0)
         {
             percentage = (total_distance - new_distance) / (2 * total_distance);
         }
@@ -216,10 +245,12 @@ public class GameController : MonoBehaviour
 
     IEnumerator Endgame()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(1f);
+        if (finish) percentage = 1f;
         EndText2.text = (int)(percentage * 100) + "% COMPLETED";
         end_menu.SetActive(true);
         Time.timeScale = 0;
+        SendStats();
     }
 
     IEnumerator PlayRadar5Second()

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5674327206980276079}
   - component: {fileID: 158637046695202738}
   - component: {fileID: 5582239259326468564}
-  - component: {fileID: 8268077052969442963}
   m_Layer: 5
   m_Name: CanvasEndGame
   m_TagString: Untagged
@@ -113,22 +112,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797017686341769819}
   m_CullTransparentMesh: 1
---- !u!114 &8268077052969442963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1797017686341769819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3557102b3ccb3e54da65ff3a95abbbf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
-  Text1: {fileID: 0}
-  Text2: {fileID: 0}
-  _slider: {fileID: 0}
 --- !u!1 &2755828888542944467
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU LOST!
+  m_text: GAME OVER!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4358c1744f78c0549811b162d186abc7, type: 2}
   m_sharedMaterial: {fileID: -6970276537877203018, guid: 4358c1744f78c0549811b162d186abc7, type: 2}

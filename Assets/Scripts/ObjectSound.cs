@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonSound : MonoBehaviour
+public class ObjectSound : MonoBehaviour
 {
 
-    public AudioSource soundButton;
+    public AudioSource sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,6 @@ public class ButtonSound : MonoBehaviour
 
     public void playThisSound()
     {
-        soundButton.Play();
+        sound.Play();
     }
 }

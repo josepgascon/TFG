@@ -104,6 +104,7 @@ public class DBController : MonoBehaviour
 
             Main.Instance.Login.gameObject.SetActive(true);
             Main.Instance.registerMenu.SetActive(false);
+            StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "6", "0", "0", "0", "0"));
             StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "1", "0", "0", "0", "0"));
             StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "2", "0", "0", "0", "0"));
             StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "3", "0", "0", "0", "0"));

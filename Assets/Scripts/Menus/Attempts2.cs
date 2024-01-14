@@ -4,7 +4,7 @@ using SimpleJSON;
 using UnityEngine;
 using TMPro;
 
-public class Attempts : MonoBehaviour
+public class Attempts2 : MonoBehaviour
 {
 
     Action<string> _createAttemptsCallback;
@@ -29,7 +29,7 @@ public class Attempts : MonoBehaviour
     {
         string user_id = Main.currentUser.ToString();
         StartCoroutine(Main.Instance.DBController.GetUserLevel(user_id, _createAttemptsCallback));
-
+        
     }
 
     IEnumerator CreateAttemptsRoutine(string jsonArrayString)
@@ -37,7 +37,7 @@ public class Attempts : MonoBehaviour
         //parsing jsonarray as an array
         JSONArray jsonArray = JSON.Parse(jsonArrayString) as JSONArray;
 
-        for (int i = 0; i < jsonArray.Count; i = i + 2)
+        for (int i = 1; i < jsonArray.Count; i = i + 2)
         {
             //create local variables 
             bool isDone = false;  //are we done downloading?
@@ -51,7 +51,7 @@ public class Attempts : MonoBehaviour
                 attemptInfoJson = tempArray[0].AsObject;
             };
             //wait until DBController calls the callback we passed as parameter
-            StartCoroutine(Main.Instance.DBController.GetAttempt(user_level_id, getAttemptInfoCallback));   
+            StartCoroutine(Main.Instance.DBController.GetAttempt(user_level_id, getAttemptInfoCallback));
 
             //Wait until the callback is called from DBController (info finished downloaded)
             yield return new WaitUntil(() => isDone == true);
@@ -76,7 +76,7 @@ public class Attempts : MonoBehaviour
             }
 
             else
-            {  
+            {
                 attempt.transform.Find("Level").GetComponent<TMP_Text>().text = "level " + attemptInfoJson["level_id"];
                 attempt.transform.Find("attempts").GetComponent<TMP_Text>().text = "attempts: " + attemptInfoJson["attempts"];
                 attempt.transform.Find("avg_score").GetComponent<TMP_Text>().text = "avg score = " + attemptInfoJson["average_score"] + "%";

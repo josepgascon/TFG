@@ -40,5 +40,8 @@ public class PauseMenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Level3");
     }
-
+    public void EndlessClick()
+    {
+        SceneManager.LoadScene("Endless");
+    }
 }

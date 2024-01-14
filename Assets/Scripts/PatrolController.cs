@@ -15,11 +15,6 @@ public class PatrolController : MonoBehaviour
 
     public void Update()
     {
-        loop();
-    }
-
-    void loop()
-    {
         float yPos = Mathf.PingPong(Time.time * speed, 5) * range;
         transform.position = new Vector3(transform.position.x, yPos + yStart, transform.position.z);
     }

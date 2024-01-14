@@ -15,19 +15,23 @@ public class EndlessController : MonoBehaviour
     public float speed;
     private bool damaged;
     public TMP_Text pressureText;
+    public TMP_Text distanceText;
+    public TMP_Text speedText;
     public int gravity = 0;
-    public float percentage = 0.31f;
+    //public float percentage = 0.31f;
     public GameObject end_menu;
     public TMP_Text EndText1;
     public TMP_Text EndText2;
-    private float total_distance;
+    private int total_distance = 0;
     public AudioSource rock_sound;
     public AudioSource radar_sound;
     private Boolean sound_radar;
-    private Boolean calculate_percentage;
+    private Boolean calculate_distance;
     string user;
     string level;
-    int dir;
+    int dir = 1;
+    public GameObject heart;
+
 
     private bool increase_speed = true;
 
@@ -41,44 +45,36 @@ public class EndlessController : MonoBehaviour
         damaged = false;
         isAccelerating = false;
         isDecelerating = false;
-        dir = 1;
-        Main.speed = 3f;
+        Main.speed = 2.5f;
         speed = Main.speed;
-
     }
-    // Start is called before the first frame update
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Time.timeScale = 1f;
-        total_distance = 0f;// Vector2.SqrMagnitude(this.transform.position - chest.transform.position);
         sound_radar = true;
-        calculate_percentage = true;
+        calculate_distance = true;
         user = Main.currentUser.ToString();
         level = SceneManager.GetActiveScene().buildIndex.ToString();
         Debug.Log("user1 = " + user);
         Debug.Log("level = " + level);
-        StartCoroutine(Main.Instance.DBController.GetUserLevelAttempt(user, level));
-
-        Debug.Log("game_controller");
-
-        Debug.Log("audio_enabled = " + Main.AudioEnabled);
-
-
+        if (Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.GetUserLevelAttempt(user, level));
     }
 
     void FixedUpdate()
     {
         rb.velocity = new Vector2(speed * dir, rb.velocity.y);
         rb.gravityScale = _slider.value;
-      //  Vector3 x = this.transform.position;
         cameraMovement.rb.velocity = new Vector2(Main.speed * dir, 0);
 
-        //CalculatePercentage(Vector2.SqrMagnitude(this.transform.position - chest.transform.position));
-        //  if (calculate_percentage) StartCoroutine(Percentage());
-          if (increase_speed) StartCoroutine(IncreaseSpeed());
-
         pressureText.text = "                 " + (int)(rb.velocity.y * 1) + " atm";
+        distanceText.text = "                 " + total_distance + "m";
+        int aux1 = (int)(rb.velocity.x * 10);
+        speedText.text = aux1/10 + "." + aux1%10 + "m/s";
+
+        if (increase_speed) StartCoroutine(IncreaseSpeed());
+        if (calculate_distance) StartCoroutine(CalculateDistance());
         if (sound_radar) StartCoroutine(PlayRadar5Second());
 
         // accelerate
@@ -108,79 +104,46 @@ public class EndlessController : MonoBehaviour
     {
         isAccelerating = false;
         Debug.Log("isAccelerating = false perro");
-
     }
     public void PointerDownAccelerate()
     {
         //if (this.transform.position.x < cameraMovement.transform.position.x + 5f)
         isAccelerating = true;
-
         Debug.Log("isAccelerating = true");
     }
-
     // Event handler for the Decelerate button
     public void PointerUpDecelerate()
     {
         isDecelerating = false;
         Debug.Log("isDecelerating = false");
-
     }
     public void PointerDownDecelerate()
     {
         //if (this.transform.position.x > cameraMovement.transform.position.x - 5f)
         isDecelerating = true;
         Debug.Log("isDecelerating = true");
-
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Mine" || collision.gameObject.tag == "Patrol" || collision.gameObject.tag == "Cave")
+        if (collision.gameObject.tag == "Mine")
         {
-
             if (!indestructible)
             {
-
                 if (damaged == false)
                 {
-                    if (collision.gameObject.tag == "Cave")
-                    {
-                        rock_sound.Play();
-                    }
-
+                    heart.SetActive(false);
                     anim.Play("IdleDamagedPlayer");
                     damaged = true;
-                    StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
-
                 }
                 else
                 {
+                    if (Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
                     anim.Play("PlayerExplosion");
                     StartCoroutine(Endgame());
-                    SendStats();
                 }
             }
         }
-
-        else if (collision.gameObject.tag == "Chest")
-        {
-            dir = -1;
-            //cameraMovement.speed = speed;
-            this.transform.Rotate(0f, 180f, 0f, Space.Self);
-            if (!damaged) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
-        }
-
-        else if (collision.gameObject.tag == "Finish")
-        {
-            EndText1.text = "YOU WON!";
-            EndText2.text = "100% COMPLETED";
-            percentage = 1f;
-            end_menu.SetActive(true);
-            Time.timeScale = 0;
-            SendStats();
-        }
-
     }
 
     private void SendStats()
@@ -197,32 +160,23 @@ public class EndlessController : MonoBehaviour
         //update stats
         int attempts = Main.attempts + 1;
         int average_score = Main.average_score;
-        average_score = (int)((Main.attempts * average_score) + (percentage * 100)) / attempts;
-        float new_score = percentage * 100;
+        average_score = (int)((Main.attempts * average_score) + total_distance) / attempts;
+        float new_score = total_distance;
         if ((int)new_score > Main.max_score) Main.max_score = (int)new_score;
-        if (percentage == 1f && damaged == false) Main.perfectly_completed = 1;
+        //if (percentage == 1f && damaged == false) Main.perfectly_completed = 1;
 
-        StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(user, level, attempts.ToString(), average_score.ToString(), Main.max_score.ToString(), Main.perfectly_completed.ToString()));
+        if (Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(user, level, attempts.ToString(), average_score.ToString(), Main.max_score.ToString(), Main.perfectly_completed.ToString()));
     }
 
-    void CalculatePercentage(float new_distance)
-    {
-        if (speed > 0)
-        {
-            percentage = (total_distance - new_distance) / (2 * total_distance);
-        }
-        else
-        {
-            percentage = (total_distance + new_distance) / (2 * total_distance);
-        }
-    }
 
     IEnumerator Endgame()
     {
-        yield return new WaitForSeconds(0.6f);
-        EndText2.text = (int)(percentage * 100) + "% COMPLETED";
+        yield return new WaitForSeconds(1f);
+        EndText1.text = "GAME OVER!";
+        EndText2.text = "SCORE = "+total_distance +"m";
         end_menu.SetActive(true);
         Time.timeScale = 0;
+        SendStats();
     }
 
     IEnumerator PlayRadar5Second()
@@ -233,19 +187,20 @@ public class EndlessController : MonoBehaviour
         sound_radar = true;
     }
 
-    IEnumerator Percentage()
+    IEnumerator CalculateDistance()
     {
-        calculate_percentage = false;
-       // CalculatePercentage(Vector2.Distance(this.transform.position, chest.transform.position));
+        calculate_distance = false;
+        // CalculatePercentage(Vector2.Distance(this.transform.position, chest.transform.position));
+        total_distance = (int)this.transform.position.x;
         yield return new WaitForSeconds(0.2f);
-        calculate_percentage = true;
+        calculate_distance = true;
     }
 
     IEnumerator IncreaseSpeed()
     {
         increase_speed = false;
         // CalculatePercentage(Vector2.Distance(this.transform.position, chest.transform.position));
-        Main.speed = Main.speed * 1.02f;
+        Main.speed = Main.speed * 1.0014f;
         speed = Main.speed;
         yield return new WaitForSeconds(0.3f);
         increase_speed = true;
