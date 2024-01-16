@@ -11,6 +11,7 @@ public class Main : MonoBehaviour
     public Login Login;
     public GameObject Stats;
     public GameObject LevelMenu;
+    public GameObject Main_Menu;
     public GameObject registerMenu;
     public static int currentUser;
     public static int user_level_id;

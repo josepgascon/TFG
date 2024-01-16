@@ -12,9 +12,9 @@ public class SpawnBackground : MonoBehaviour
     private bool create_background = true;
     private bool create_mines = true;
 
-    public float spawnTime = 1.5f;
+    public float spawnTime = 1.2f;
     public float minX = 5;
-    public float maxX = 10;
+    public float maxX = 7;
     public float minY = -5;
     public float maxY = 5;
 

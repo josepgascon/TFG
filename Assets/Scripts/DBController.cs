@@ -3,16 +3,37 @@ using UnityEngine.Networking;
 using System.Collections;
 using TMPro;
 using SimpleJSON;
-
+using UnityEngine.SceneManagement;
 
 public class DBController : MonoBehaviour
 {
     public TMP_Text SignInText;
     public TMP_Text SignUpText;
+    //private EncryptedPlayerPrefs EPP;
 
     void Start()
     {
         //StartCoroutine(GetRequest("https://subcavexplorer.000webhostapp.com/GetUsers.php"));
+        //String user = 
+        //EPP.GetString("User");
+        if (SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 4) StartCoroutine(DisplayBannerWithDelay());
+
+        SecurePlayerPrefs.Init();
+
+        if (SecurePlayerPrefs.HasKey("User") && SecurePlayerPrefs.HasKey("Password"))
+        {
+            Debug.Log("a veure user: " + SecurePlayerPrefs.GetString("User", "This is so simple"));
+            Debug.Log("a veure user: " + SecurePlayerPrefs.GetString("Password", "This is so simple"));
+            string user = SecurePlayerPrefs.GetString("User", "error");
+            string pass = SecurePlayerPrefs.GetString("Password", "error");
+            StartCoroutine(Login(user, pass));
+        }
+    }
+
+    private IEnumerator DisplayBannerWithDelay()
+    {
+        yield return new WaitForSeconds(3f);
+        AdsManager.Instance.bannerAds.ShowBannerAd();
     }
 
     public void ShowUserLevel()
@@ -62,18 +83,21 @@ public class DBController : MonoBehaviour
         else
         {
             Debug.Log(www.downloadHandler.text);
-            Main.Instance.UserInfo.SetCredentials(username, password);
-            //if(wrong user not found)
-            Main.Instance.UserInfo.SetId(www.downloadHandler.text);
-
             if (www.downloadHandler.text.Contains("Wrong password") || www.downloadHandler.text.Contains("Username does not exist"))
             {
                 SignInText.text = www.downloadHandler.text;
             }
             else
             {
+                Main.Instance.UserInfo.SetCredentials(username, password);
+                Main.Instance.UserInfo.SetId(www.downloadHandler.text);
+
+                SecurePlayerPrefs.SetString("User", username);
+                SecurePlayerPrefs.SetString("Password", password);
+        
                 Main.currentUser = int.Parse(www.downloadHandler.text);
                 Main.Instance.LevelMenu.SetActive(true);
+                Main.Instance.Main_Menu.SetActive(false);
                 Main.Instance.Login.gameObject.SetActive(false);
             }
 
@@ -104,8 +128,10 @@ public class DBController : MonoBehaviour
 
             Main.Instance.Login.gameObject.SetActive(true);
             Main.Instance.registerMenu.SetActive(false);
-            StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "6", "0", "0", "0", "0"));
-            StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "1", "0", "0", "0", "0"));
+            SecurePlayerPrefs.SetString("User", username);
+            SecurePlayerPrefs.SetString("Password", password);
+            StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "6", "0", "0", "0", "0"));//endless te el num 6 pq en el scenemanager tambe es el 6
+            StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "1", "0", "0", "0", "0"));//els altres levels tambe tenen el mateix num de scenemanager
             StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "2", "0", "0", "0", "0"));
             StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "3", "0", "0", "0", "0"));
 

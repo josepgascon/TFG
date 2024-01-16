@@ -17,8 +17,6 @@ public class EndlessController : MonoBehaviour
     public TMP_Text pressureText;
     public TMP_Text distanceText;
     public TMP_Text speedText;
-    public int gravity = 0;
-    //public float percentage = 0.31f;
     public GameObject end_menu;
     public TMP_Text EndText1;
     public TMP_Text EndText2;
@@ -60,12 +58,14 @@ public class EndlessController : MonoBehaviour
         Debug.Log("user1 = " + user);
         Debug.Log("level = " + level);
         if (Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.GetUserLevelAttempt(user, level));
+        AdsManager.Instance.bannerAds.HideBannerAd();
     }
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(speed * dir, rb.velocity.y);
-        rb.gravityScale = _slider.value;
+        rb.velocity = new Vector2(speed * dir, -(_slider.value * 5.3f));
+        //rb.velocity = new Vector2(speed * dir, rb.velocity.y);
+        //rb.gravityScale = _slider.value;
         cameraMovement.rb.velocity = new Vector2(Main.speed * dir, 0);
 
         pressureText.text = "                 " + (int)(rb.velocity.y * 1) + " atm";
@@ -80,13 +80,8 @@ public class EndlessController : MonoBehaviour
         // accelerate
         if (isAccelerating)
         {
-            Debug.Log("isAccelerating =  perro");
-
             if (this.transform.position.x >= cameraMovement.transform.position.x + 8f) isAccelerating = false;
-
             speed = Main.speed*2f;
-            Debug.Log("isAccelerating = true perro");
-
         }
         // decelerate
         else if (isDecelerating)
@@ -98,30 +93,35 @@ public class EndlessController : MonoBehaviour
 
     }
 
+    public void SliderPointerUp()
+    {
+        _slider.value = 0f;
+        //_slider.transform.Translate(0f, -15f, 0f, Space.Self);
+    }
+    public void SliderPointerDown()
+    {
+        //_slider.transform.Translate(0f, 15f, 0f, Space.Self);
+    }
 
     // Event handler for the Accelerate button
     public void PointerUpAccelerate()
     {
         isAccelerating = false;
-        Debug.Log("isAccelerating = false perro");
     }
     public void PointerDownAccelerate()
     {
         //if (this.transform.position.x < cameraMovement.transform.position.x + 5f)
         isAccelerating = true;
-        Debug.Log("isAccelerating = true");
     }
     // Event handler for the Decelerate button
     public void PointerUpDecelerate()
     {
         isDecelerating = false;
-        Debug.Log("isDecelerating = false");
     }
     public void PointerDownDecelerate()
     {
         //if (this.transform.position.x > cameraMovement.transform.position.x - 5f)
         isDecelerating = true;
-        Debug.Log("isDecelerating = true");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -171,7 +171,11 @@ public class EndlessController : MonoBehaviour
 
     IEnumerator Endgame()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.7f);
+        int games = PlayerPrefs.GetInt("games_played", 0);
+        PlayerPrefs.SetInt("games_played", ++games);
+        if (games % 4 == 0) AdsManager.Instance.interstitialAds.ShowInterstitialAd();
+
         EndText1.text = "GAME OVER!";
         EndText2.text = "SCORE = "+total_distance +"m";
         end_menu.SetActive(true);

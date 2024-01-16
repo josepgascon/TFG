@@ -538,7 +538,7 @@ PrefabInstance:
     - target: {fileID: 3655882939180833247, guid: 9d92e2bc6494c5c419afcd2bcd4187b7, type: 3}
       propertyPath: _slider
       value: 
-      objectReference: {fileID: 876326950}
+      objectReference: {fileID: 0}
     - target: {fileID: 3655882939180833247, guid: 9d92e2bc6494c5c419afcd2bcd4187b7, type: 3}
       propertyPath: EndText1
       value: 
@@ -5119,6 +5119,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 830960176}
   m_SourcePrefab: {fileID: 100100000, guid: 42fb4f40bbba19a4198276a4a4c107c8, type: 3}
+--- !u!114 &791141260 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5488438283768579311, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+  m_PrefabInstance: {fileID: 4551080714585470629}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &794264698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5511,17 +5522,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3128379429474596491, guid: 1d376eeaf251a4e469ec2d56d25f76fd, type: 3}
   m_PrefabInstance: {fileID: 1268618940}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &876326950 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7765351243988167287, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
-  m_PrefabInstance: {fileID: 4551080714585470629}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &898934737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10908,7 +10908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24436ee43eb33f64193148118434d10d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider: {fileID: 876326950}
+  _slider: {fileID: 791141260}
   indestructible: 0
   cameraMovement: {fileID: 1963147483}
   speed: 3
@@ -12179,6 +12179,18 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: EndlessController, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5343112722030507049, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343112722030507049, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343112722030507049, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5663395367043073998, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
       propertyPath: m_Camera
       value: 
@@ -12359,9 +12371,53 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 263
       objectReference: {fileID: 0}
+    - target: {fileID: 8992408472024333702, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8992408472024333702, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8992408472024333702, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9058867619593751631, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 456.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069079262193587403, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2005406911}
+    - target: {fileID: 9069079262193587403, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2005406911}
+    - target: {fileID: 9069079262193587403, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SliderPointerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069079262193587403, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SliderPointerDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069079262193587403, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EndlessController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069079262193587403, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EndlessController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069079262193587403, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069079262193587403, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9189556741317143734, guid: 678ec60d032828f4392c64af3cb11868, type: 3}
       propertyPath: m_LocalScale.x

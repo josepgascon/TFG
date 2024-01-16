@@ -23,6 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380065989998959174}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.69, y: 7.0670357, z: 3.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,7 +32,6 @@ Transform:
   - {fileID: 973757553915980202}
   - {fileID: 2773371027574397840}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3755295357173672800
 GameObject:
@@ -62,13 +62,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3755295357173672800}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.3386984, y: -4.7670355, z: 0.26621795}
   m_LocalScale: {x: 1.76, y: 10.215258, z: 1.76}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4473020797538068118}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5171486936454896959
 SpriteRenderer:
@@ -182,11 +182,11 @@ AreaEffector2D:
     m_Bits: 4294967295
   m_UseGlobalAngle: 0
   m_ForceAngle: 90
-  m_ForceMagnitude: 6
-  m_ForceVariation: 0
+  m_ForceMagnitude: 100
+  m_ForceVariation: 100
   m_ForceTarget: 0
-  m_Drag: 0
-  m_AngularDrag: 0
+  m_Drag: 5.18
+  m_AngularDrag: 4.19
 --- !u!198 &1228677709401028833
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4924,13 +4924,15 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
+  m_UseCustomVertexStreams: 0
   m_VertexStreams: 0001030405
+  m_UseCustomTrailVertexStreams: 0
+  m_TrailVertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -4952,7 +4954,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c19aef3d704db6d43aec210497677a9a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.82
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5060,13 +5062,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7822308800235177475}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.2686987, y: -8.087036, z: 0.26621795}
   m_LocalScale: {x: 6.167586, y: 7.04, z: 2.5133898}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4473020797538068118}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4124466452323484772
 SpriteRenderer:

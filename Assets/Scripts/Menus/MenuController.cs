@@ -35,7 +35,7 @@ public class MenuController : MonoBehaviour
         registerMenu.SetActive(false);
         levelMenu.SetActive(false);
         MusicMenu.SetActive(false);
-        StatsMenu.SetActive(false); 
+        StatsMenu.SetActive(false);
     }
 
     public void loginClick()
@@ -60,11 +60,13 @@ public class MenuController : MonoBehaviour
         registerMenu.SetActive(false);
         levelMenu.SetActive(true);
         StatsMenu.SetActive(false);
+        MusicMenu.SetActive(false);
     }
 
     public void musicClick()
     {
         mainMenu.SetActive(false);
+        levelMenu.SetActive(false);
         MusicMenu.SetActive(true);
     }
 
@@ -76,6 +78,7 @@ public class MenuController : MonoBehaviour
 
     public void MenuClickdesdeLevel()
     {
+        SecurePlayerPrefs.DeleteAll();
         SceneManager.LoadScene("Menú");
     }
 

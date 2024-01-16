@@ -1,9 +1,12 @@
 using System;
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+//using UnityEngine.UIElements;
+//using UnityEngine.UIElements;
 
 public class GameController : MonoBehaviour
 {
@@ -14,11 +17,11 @@ public class GameController : MonoBehaviour
     //public SoundController soundController;
     public bool indestructible;
     public ObjectMove cameraMovement;
-    public float speed;
+    private float speed;
     private bool damaged;
     public TMP_Text pressureText;
     public Slider percentageSlider;
-    public int gravity = 0;
+    private int gravity = 0;
     public float percentage = 0.31f;
     public GameObject end_menu;
     public TMP_Text EndText1;
@@ -55,7 +58,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Debug.Log("_slider.transform.position = " + _slider.transform.position);
         rb = GetComponent<Rigidbody2D>();
         Time.timeScale = 1f;
         total_distance = Vector2.Distance(this.transform.position, chest.transform.position);
@@ -68,13 +71,16 @@ public class GameController : MonoBehaviour
         if(Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.GetUserLevelAttempt(user, level));
 
         Debug.Log(" Main.currentUser =" + Main.currentUser);
-
+        AdsManager.Instance.bannerAds.HideBannerAd();
+        //StartCoroutine(DisplayBannerWithDelay());
     }
+
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(speed * dir, rb.velocity.y);
-        rb.gravityScale = _slider.value;
+        rb.velocity = new Vector2(speed * dir, - (_slider.value * 5.3f));
+        //rb.velocity = new Vector2(speed * dir, rb.velocity.y);
+        //rb.gravityScale = _slider.value;
         Vector3 x = this.transform.position;
         cameraMovement.rb.velocity = new Vector2(3f*dir, 0);
 
@@ -90,8 +96,6 @@ public class GameController : MonoBehaviour
             {
                 if (this.transform.position.x >= cameraMovement.transform.position.x + 8f) isAccelerating = false;
                 speed = 6f;
-                Debug.Log("isAccelerating = true perro");
-
             }
             else if (isDecelerating)
             {
@@ -102,21 +106,29 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            if (isAccelerating)
+            if (isDecelerating)
             {
-                if (this.transform.position.x <= cameraMovement.transform.position.x - 8f) isAccelerating = false;
-                speed = 1f;
-                Debug.Log("isAccelerating = true perro");
-
-            }
-            else if (isDecelerating)
-            {
-                if (this.transform.position.x >= cameraMovement.transform.position.x + 8f) isDecelerating = false;
+                if (this.transform.position.x <= cameraMovement.transform.position.x - 8f) isDecelerating = false;
                 speed = 6f;
+            }
+            else if (isAccelerating)
+            {
+                if (this.transform.position.x >= cameraMovement.transform.position.x + 8f) isAccelerating = false;
+                speed = 1f;
             }
             else speed = 3f;
         }
 
+    }
+
+    public void SliderPointerUp()
+    {
+        _slider.value = 0f;
+        //_slider.transform.Translate(0f, -15f, 0f, Space.Self);
+    }
+    public void SliderPointerDown()
+    {
+        //_slider.transform.Translate(0f, 15f, 0f, Space.Self);
     }
 
 
@@ -124,30 +136,22 @@ public class GameController : MonoBehaviour
     public void PointerUpAccelerate()
     {
         isAccelerating = false;
-        Debug.Log("isAccelerating = false perro");
-
     }
     public void PointerDownAccelerate()
     {
         //if (this.transform.position.x < cameraMovement.transform.position.x + 5f)
         isAccelerating = true;
-
-            Debug.Log("isAccelerating = true");
     }
 
     // Event handler for the Decelerate button
     public void PointerUpDecelerate()
     {
         isDecelerating = false;
-        Debug.Log("isDecelerating = false");
-
     }
     public void PointerDownDecelerate()
     {
         //if (this.transform.position.x > cameraMovement.transform.position.x - 5f)
         isDecelerating = true;
-        Debug.Log("isDecelerating = true");
-
     }
 
 
@@ -155,16 +159,12 @@ public class GameController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Mine" || collision.gameObject.tag == "Patrol" || collision.gameObject.tag == "Cave")
         {
+            if (collision.gameObject.tag == "Cave") rock_sound.Play();
             if (!indestructible)
             {
                 if (damaged == false)
                 {
                     heart.SetActive(false);
-                    if (collision.gameObject.tag == "Cave")
-                    {
-                        rock_sound.Play();
-                    }
-
                     anim.Play("IdleDamagedPlayer");
                     damaged = true;
 
@@ -180,23 +180,17 @@ public class GameController : MonoBehaviour
 
         else if (collision.gameObject.tag == "Star")
         {
-            
             star_count++;
             if (star_count == 1) star1.sprite = star;
             else if (star_count == 2) star2.sprite = star;
             else if (star_count == 3) star3.sprite = star;
-            //cameraMovement.speed = speed;
-            //this.transform.Rotate(0f, 180f, 0f, Space.Self);
-            //if (!damaged) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
         }
 
 
         else if (collision.gameObject.tag == "Chest")
         {
             dir = -1;
-            //cameraMovement.speed = speed;
             this.transform.Rotate(0f, 180f, 0f, Space.Self);
-            //if (!damaged) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
         }
 
         else if (collision.gameObject.tag == "Finish")
@@ -245,7 +239,11 @@ public class GameController : MonoBehaviour
 
     IEnumerator Endgame()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.7f);
+        int games = PlayerPrefs.GetInt("games_played", 0);
+        PlayerPrefs.SetInt("games_played", ++games);
+        if (games % 4 == 0) AdsManager.Instance.interstitialAds.ShowInterstitialAd();
+
         if (finish) percentage = 1f;
         EndText2.text = (int)(percentage * 100) + "% COMPLETED";
         end_menu.SetActive(true);
@@ -265,6 +263,11 @@ public class GameController : MonoBehaviour
     {
         calculate_percentage = false;
         CalculatePercentage(Vector2.Distance(this.transform.position, chest.transform.position));
+        if((Vector2.Distance(this.transform.position, cameraMovement.transform.position) > 19)){
+            if (Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
+            anim.Play("PlayerExplosion");
+            StartCoroutine(Endgame());
+        } 
         yield return new WaitForSeconds(0.2f);
         calculate_percentage = true;
     }
