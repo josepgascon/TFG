@@ -40,6 +40,14 @@ public class PauseMenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Level3");
     }
+    public void PlayLevel4()
+    {
+        SceneManager.LoadScene("Level4");
+    }
+    public void PlayLevel5()
+    {
+        SceneManager.LoadScene("Level5");
+    }
     public void EndlessClick()
     {
         SceneManager.LoadScene("Endless");

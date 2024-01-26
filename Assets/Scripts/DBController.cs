@@ -13,26 +13,23 @@ public class DBController : MonoBehaviour
 
     void Start()
     {
-        //StartCoroutine(GetRequest("https://subcavexplorer.000webhostapp.com/GetUsers.php"));
-        //String user = 
-        //EPP.GetString("User");
-        if (SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 4) StartCoroutine(DisplayBannerWithDelay());
+        if (SceneManager.GetActiveScene().buildIndex == 0 ||
+            SceneManager.GetActiveScene().buildIndex == 7) StartCoroutine(DisplayBannerWithDelay());
 
         SecurePlayerPrefs.Init();
 
         if (SecurePlayerPrefs.HasKey("User") && SecurePlayerPrefs.HasKey("Password"))
         {
-            Debug.Log("a veure user: " + SecurePlayerPrefs.GetString("User", "This is so simple"));
-            Debug.Log("a veure user: " + SecurePlayerPrefs.GetString("Password", "This is so simple"));
             string user = SecurePlayerPrefs.GetString("User", "error");
             string pass = SecurePlayerPrefs.GetString("Password", "error");
             StartCoroutine(Login(user, pass));
         }
+
     }
 
     private IEnumerator DisplayBannerWithDelay()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(3.5f);
         AdsManager.Instance.bannerAds.ShowBannerAd();
     }
 
@@ -134,7 +131,8 @@ public class DBController : MonoBehaviour
             StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "1", "0", "0", "0", "0"));//els altres levels tambe tenen el mateix num de scenemanager
             StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "2", "0", "0", "0", "0"));
             StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "3", "0", "0", "0", "0"));
-
+            StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "4", "0", "0", "0", "0"));
+            StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(www.downloadHandler.text, "5", "0", "0", "0", "0"));
         }
     }
 

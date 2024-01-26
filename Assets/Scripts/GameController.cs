@@ -5,23 +5,18 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-//using UnityEngine.UIElements;
-//using UnityEngine.UIElements;
+
 
 public class GameController : MonoBehaviour
 {
     private Rigidbody2D rb;
     public Slider _slider;
     private Animator anim;
-    // public new Camera mainCamera;
-    //public SoundController soundController;
     public bool indestructible;
     public ObjectMove cameraMovement;
     private float speed;
     private bool damaged;
-    public TMP_Text pressureText;
     public Slider percentageSlider;
-    private int gravity = 0;
     public float percentage = 0.31f;
     public GameObject end_menu;
     public TMP_Text EndText1;
@@ -55,7 +50,7 @@ public class GameController : MonoBehaviour
         isDecelerating = false; 
         dir = 1;
     }
-    // Start is called before the first frame update
+
     void Start()
     {
         Debug.Log("_slider.transform.position = " + _slider.transform.position);
@@ -68,7 +63,13 @@ public class GameController : MonoBehaviour
         level = SceneManager.GetActiveScene().buildIndex.ToString();
         Debug.Log("user1 = " + user);
         Debug.Log("level = " + level);
-        if(Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.GetUserLevelAttempt(user, level));
+        Debug.Log("(Main.attempts = " + Main.attempts);
+        if (Main.currentUser != -1)
+        {
+            StartCoroutine(Main.Instance.DBController.GetUserLevelAttempt(user, level));
+            Debug.Log("estic dins1:C");
+        }
+
 
         Debug.Log(" Main.currentUser =" + Main.currentUser);
         AdsManager.Instance.bannerAds.HideBannerAd();
@@ -81,12 +82,12 @@ public class GameController : MonoBehaviour
         rb.velocity = new Vector2(speed * dir, - (_slider.value * 5.3f));
         //rb.velocity = new Vector2(speed * dir, rb.velocity.y);
         //rb.gravityScale = _slider.value;
+
         Vector3 x = this.transform.position;
         cameraMovement.rb.velocity = new Vector2(3f*dir, 0);
 
         if (calculate_percentage) StartCoroutine(Percentage()); //cada 0.2 segons calcula el percentatge de nivell que s'ha recorregut
 
-        pressureText.text = "                 " + (int)(rb.velocity.y * 1) + " atm";
         percentageSlider.value = percentage;
         if (sound_radar) StartCoroutine(PlayRadar5Second());
 
@@ -209,21 +210,38 @@ public class GameController : MonoBehaviour
         Debug.Log("level = " + level);
 
         Debug.Log(Main.user_level_id);
-        Debug.Log(Main.attempts);
+        Debug.Log("main attempts =" + Main.attempts);
         Debug.Log(Main.average_score);
         Debug.Log(Main.max_score);
         Debug.Log(Main.perfectly_completed);
 
-        //update stats
-        int attempts = Main.attempts + 1;
-        int average_score = Main.average_score;
-        average_score = (int)((Main.attempts * average_score) + (percentage * 100)) / attempts;
-        float new_score = percentage * 100;
-        if ((int)new_score > Main.max_score) Main.max_score = (int)new_score;
-        if (percentage == 1f && damaged == false && star_count == 3) Main.perfectly_completed = 1;
+        //first attempt
+        if (Main.attempts == 0 && Main.currentUser != -1)
+        {
+            int attempts = 1;
+            int average_score = (int)(percentage * 100) / attempts;
+            float new_score = percentage * 100;
+            Main.max_score = (int)new_score;
+            if (percentage == 1f && damaged == false && star_count == 3) Main.perfectly_completed = 1;
+            Debug.Log("estic molt dins");
 
-        if (Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(user, level, attempts.ToString(), average_score.ToString(), Main.max_score.ToString(), Main.perfectly_completed.ToString()));
+            StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(user, level, attempts.ToString(), average_score.ToString(), Main.max_score.ToString(), Main.perfectly_completed.ToString()));
+        }
+        //update stats
+        else if (Main.currentUser != -1)
+        {
+            int attempts = Main.attempts + 1;
+            int average_score = Main.average_score;
+            average_score = (int)((Main.attempts * average_score) + (percentage * 100)) / attempts;
+            float new_score = percentage * 100;
+            if ((int)new_score > Main.max_score) Main.max_score = (int)new_score;
+            if (percentage == 1f && damaged == false && star_count == 3) Main.perfectly_completed = 1;
+
+            StartCoroutine(Main.Instance.DBController.RegisterUserLevelAttempt(user, level, attempts.ToString(), average_score.ToString(), Main.max_score.ToString(), Main.perfectly_completed.ToString()));
+
+        }
     }
+       
 
     void CalculatePercentage(float new_distance)
     {
@@ -263,11 +281,13 @@ public class GameController : MonoBehaviour
     {
         calculate_percentage = false;
         CalculatePercentage(Vector2.Distance(this.transform.position, chest.transform.position));
+
         if((Vector2.Distance(this.transform.position, cameraMovement.transform.position) > 19)){
             if (Main.currentUser != -1) StartCoroutine(Main.Instance.DBController.DeleteUserLevelAttempt(user, level));
             anim.Play("PlayerExplosion");
             StartCoroutine(Endgame());
         } 
+
         yield return new WaitForSeconds(0.2f);
         calculate_percentage = true;
     }

@@ -7,6 +7,7 @@ public class MenuController : MonoBehaviour
     public GameObject loginMenu;
     public GameObject registerMenu;
     public GameObject levelMenu;
+    public GameObject select_levelMenu;
     public GameObject MusicMenu;
     public GameObject StatsMenu;
 
@@ -27,6 +28,17 @@ public class MenuController : MonoBehaviour
         Debug.Log("You have clicked the button level3");
         SceneManager.LoadScene("Level3");
     }
+
+    public void Level4Click() { 
+        Debug.Log("You have clicked the button level4");
+        SceneManager.LoadScene("Level4");
+    }
+
+    public void Level5Click() { 
+        Debug.Log("You have clicked the button level5");
+        SceneManager.LoadScene("Level5");
+    }
+
 
     public void MainMenuClick()
     {
@@ -59,6 +71,18 @@ public class MenuController : MonoBehaviour
         loginMenu.SetActive(false);
         registerMenu.SetActive(false);
         levelMenu.SetActive(true);
+        select_levelMenu.SetActive(false);
+        StatsMenu.SetActive(false);
+        MusicMenu.SetActive(false);
+    }
+
+    public void select_levelClick()
+    {
+        mainMenu.SetActive(false);
+        loginMenu.SetActive(false);
+        registerMenu.SetActive(false);
+        levelMenu.SetActive(false);
+        select_levelMenu.SetActive(true);
         StatsMenu.SetActive(false);
         MusicMenu.SetActive(false);
     }
